@@ -222,10 +222,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp J         &kp C            &kp Y                &kp F         &kp K          &kp Z             &kp W         &kp U                 &key_repeat  &kp Q
-                &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_COMMAND T  &hml LSHFT H  &kp P          &kp M             &hmr RSHFT N  &hmr RIGHT_COMMAND I  &hmr LALT A  &hmr RCTRL O
-&kp UNDERSCORE  &kp X         &kp V            &kp G                &lt 1 D       &kp B          &kp SINGLE_QUOTE  &lt 1 L       &kp COMMA             &kp DOT      &kp FSLH      &kp Q
-                                               &kp TAB              &thl 2 E      &thl 3 BSPC    &thr 4 RETURN     &thr 5 SPACE  &thr 6 ESCAPE
+           &kp Q         &kp W            &kp E                &kp R         &kp T               &kp Y          &kp U             &kp I                 &kp O        &kp SEMICOLON
+           &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_COMMAND D  &hml LSHFT F  &kp G               &kp M          &hmr RSHFT N      &hmr RIGHT_COMMAND I  &hmr LALT A  &kp P
+&kp GRAVE  &kp Z         &kp X            &kp C                &lt 1 V       &kp B               &kp N          &lt 1 M           &kp COMMA             &kp DOT      &kp FSLH       &kp NON_US_BACKSLASH
+                                          &kp TAB              &thl 2 TAB    &thl 3 SEPARATOR    &thr 4 RETURN  &thr 5 BACKSPACE  &thr 6 DELETE
             >;
         };
 
