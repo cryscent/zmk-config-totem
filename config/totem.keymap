@@ -393,7 +393,7 @@
             key-positions = <24 16 17>;
         };
 
-        combo_re_lnav {
+        combo_re_layer_nav {
             bindings = <&tog 1>;
             key-positions = <2 3>;
         };
@@ -418,7 +418,7 @@
             key-positions = <13 24>;
         };
 
-        combo_vcx_leftnumpad {
+        combo_vcx_left_numpad {
             bindings = <&tog 2>;
             key-positions = <22 23 24>;
         };
@@ -426,6 +426,31 @@
         combo_fspace_ctrl_space {
             bindings = <&kp LC(SPACE)>;
             key-positions = <13 34>;
+        };
+
+        combo_vc_left_function {
+            bindings = <&tog 4>;
+            key-positions = <24 23>;
+        };
+
+        combo_rew_layer_mouse {
+            bindings = <&mo 3>;
+            key-positions = <3 2 1>;
+        };
+
+        combo_rewq_mouse_3x {
+            bindings = <&mo 5>;
+            key-positions = <3 2 1 0>;
+        };
+
+        combo_fenter_ctrl_enter {
+            bindings = <&kp LC(ENTER)>;
+            key-positions = <13 35>;
+        };
+
+        combo_fslash_ctrl_slash {
+            bindings = <&kp LC(SLASH)>;
+            key-positions = <13 30>;
         };
     };
 
@@ -447,6 +472,34 @@
             #binding-cells = <0>;
             bindings = <&sql01 &kp LS(S) &kp LS(E) &kp LS(L) &kp LS(E) &kp LS(C) &kp LS(T) &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp STAR &kp RET &kp LS(F) &kp LS(R) &kp LS(O) &kp LS(M) &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp E &kp C &kp O &kp M &kp M &kp R &kp E &kp T &kp A &kp I &kp L &kp DOT &kp RET &kp LS(W) &kp LS(H) &kp LS(E) &kp LS(R) &kp LS(E) &kp SPACE &kp N1 &kp EQUAL &kp N1>;
             label = "SQL01";
+        };
+
+        mouse_right_3x: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT>;
+            label = "NEW_MACRO";
+        };
+
+        mouse_left_3x: mouse_left_3x {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT>;
+            label = "MOUSE_LEFT_3X";
+        };
+
+        mouse_up_3x: mouse_up_3x {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP>;
+            label = "MOUSE_UP_3X";
+        };
+
+        mouse_down_3x: mouse_down_3x {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN>;
+            label = "MOUSE_DOWN_3X";
         };
     };
 
@@ -623,7 +676,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        base_layer {
+        base {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "BASE";
@@ -656,7 +709,7 @@
             >;
         };
 
-        leftnumpad {
+        left_numpad {
             bindings = <
                &td_bracket  &kp N7  &kp N8       &kp N9   &kp N0             &trans     &trans     &trans      &trans    &trans
                &kp MINUS    &kp N4  &kp N5       &kp N6   &kp EQUAL          &trans     &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI
@@ -665,10 +718,28 @@
             >;
         };
 
-        mouse {
+        mouse_1x {
             bindings = <
-        &trans    &none     &none        &none      &none        &mmv MOVE_Y(600)   &mmv MOVE_X(-600)  &mmv MOVE_UP    &mmv MOVE_X(600)  &trans
-        &kp LGUI  &kp LALT  &kp LSHIFT   &kp LCTRL  &none        &mmv MOVE_Y(-600)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mkp LCLK
+        &trans    &none     &none        &none      &none        &mmv MOVE_Y(200)   &mmv MOVE_X(-200)  &mmv MOVE_UP    &mmv MOVE_X(200)  &trans
+        &kp LGUI  &kp LALT  &kp LSHIFT   &kp LCTRL  &none        &mmv MOVE_Y(-200)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mkp LCLK
+&trans  &trans    &trans    &trans       &trans     &trans       &trans             &trans             &trans          &trans            &trans     &mkp RCLK
+                            &kp LS(TAB)  &kp TAB    &kp SPACE    &kp RET            &kp BSPC           &kp DELETE
+            >;
+        };
+
+        left_function {
+            bindings = <
+       &none  &kp F7  &kp F8       &kp F9   &kp F10      &trans     &trans     &trans      &trans    &trans
+       &none  &kp F4  &kp F5       &kp F6   &kp F11      &trans     &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI
+&none  &none  &kp F1  &kp F2       &kp F3   &kp F12      &trans     &trans     &trans      &trans    &trans    &trans
+                      &kp LS(TAB)  &kp TAB  &kp SPACE    &kp ENTER  &kp BSPC   &kp DELETE
+            >;
+        };
+
+        mouse_3x {
+            bindings = <
+        &trans    &none     &none        &none      &none        &mmv MOVE_Y(600)   &mmv MOVE_X(-600)  &mouse_up_3x    &mmv MOVE_X(600)  &trans
+        &kp LGUI  &kp LALT  &kp LSHIFT   &kp LCTRL  &none        &mmv MOVE_Y(-600)  &mouse_left_3x     &mouse_down_3x  &mouse_right_3x   &mkp LCLK
 &trans  &trans    &trans    &trans       &trans     &trans       &trans             &trans             &trans          &trans            &trans     &mkp RCLK
                             &kp LS(TAB)  &kp TAB    &kp SPACE    &kp RET            &kp BSPC           &kp DELETE
             >;
