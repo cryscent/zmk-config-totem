@@ -438,11 +438,6 @@
             key-positions = <3 2 1>;
         };
 
-        combo_rewq_mouse_3x {
-            bindings = <&mo 5>;
-            key-positions = <3 2 1 0>;
-        };
-
         combo_fenter_ctrl_enter {
             bindings = <&kp LC(ENTER)>;
             key-positions = <13 35>;
@@ -720,7 +715,7 @@
 
         mouse_1x {
             bindings = <
-        &trans    &none     &none        &none      &none        &mmv MOVE_Y(200)   &mmv MOVE_X(-200)  &mmv MOVE_UP    &mmv MOVE_X(200)  &trans
+        &trans    &mo 5     &none        &none      &none        &mmv MOVE_Y(200)   &mmv MOVE_X(-200)  &mmv MOVE_UP    &mmv MOVE_X(200)  &trans
         &kp LGUI  &kp LALT  &kp LSHIFT   &kp LCTRL  &none        &mmv MOVE_Y(-200)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mkp LCLK
 &trans  &trans    &trans    &trans       &trans     &trans       &trans             &trans             &trans          &trans            &trans     &mkp RCLK
                             &kp LS(TAB)  &kp TAB    &kp SPACE    &kp RET            &kp BSPC           &kp DELETE
