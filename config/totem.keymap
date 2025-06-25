@@ -33,9 +33,9 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_fjk_caps_word {
+        combo_fj_caps_word {
             bindings = <&caps_word>;
-            key-positions = <13 16 17>;
+            key-positions = <13 16>;
         };
 
         combo_qw_esc {
@@ -78,14 +78,14 @@
             key-positions = <0 11>;
         };
 
-        combo_qd_shift {
+        combo_wd_shift {
             bindings = <&sk LSHFT>;
-            key-positions = <0 12>;
+            key-positions = <12 1>;
         };
 
-        combo_qf_ctrl {
+        combo_ef_ctrl {
             bindings = <&sk LCTRL>;
-            key-positions = <0 13>;
+            key-positions = <13 2>;
         };
 
         combo_ag_gui {
@@ -118,11 +118,6 @@
             key-positions = <10 11 12 13>;
         };
 
-        combo_we_tab {
-            bindings = <&kp TAB>;
-            key-positions = <1 2>;
-        };
-
         combo_lp_gui_alt {
             bindings = <&sk LA(LGUI)>;
             key-positions = <18 19>;
@@ -153,9 +148,9 @@
             key-positions = <16 18>;
         };
 
-        combo_ksemicolon_shift {
+        combo_ko_shift {
             bindings = <&sk LSHIFT>;
-            key-positions = <17 9>;
+            key-positions = <17 8>;
         };
 
         combo_lsemicolon_alt {
@@ -163,9 +158,9 @@
             key-positions = <18 9>;
         };
 
-        combo_jsemicolon_ctrl {
+        combo_ji_ctrl {
             bindings = <&sk LCTRL>;
-            key-positions = <16 9>;
+            key-positions = <16 7>;
         };
 
         combo_hp_gui {
@@ -228,84 +223,84 @@
             key-positions = <25 4>;
         };
 
-        combo_fm_1 {
+        combo_gm_1 {
             bindings = <&kp N1>;
-            key-positions = <13 27>;
+            key-positions = <27 14>;
         };
 
-        combo_fcomma_2 {
+        combo_gcomma_2 {
             bindings = <&kp N2>;
-            key-positions = <13 28>;
+            key-positions = <28 14>;
         };
 
-        combo_fperiod_3 {
+        combo_gperiod_3 {
             bindings = <&kp N3>;
-            key-positions = <13 29>;
+            key-positions = <29 14>;
         };
 
-        combo_fj_4 {
+        combo_gj_4 {
             bindings = <&kp N4>;
-            key-positions = <13 16>;
+            key-positions = <16 14>;
         };
 
-        combo_fk_5 {
+        combo_gk_5 {
             bindings = <&kp N5>;
-            key-positions = <13 17>;
+            key-positions = <17 14>;
         };
 
-        combo_fl_6 {
+        combo_gl_6 {
             bindings = <&kp N6>;
-            key-positions = <13 18>;
+            key-positions = <18 14>;
         };
 
-        combo_fu_7 {
+        combo_gu_7 {
             bindings = <&kp N7>;
-            key-positions = <13 6>;
+            key-positions = <6 14>;
         };
 
-        combo_fi_8 {
+        combo_gi_8 {
             bindings = <&kp N8>;
-            key-positions = <13 7>;
+            key-positions = <7 14>;
         };
 
-        combo_fo_9 {
+        combo_go_9 {
             bindings = <&kp N9>;
-            key-positions = <13 8>;
+            key-positions = <8 14>;
         };
 
-        combo_fsemicolon_0 {
+        combo_gsemicolon_0 {
             bindings = <&kp N0>;
-            key-positions = <13 9>;
+            key-positions = <9 14>;
         };
 
-        combo_fh_equal {
+        combo_gh_equal {
             bindings = <&kp EQUAL>;
-            key-positions = <13 15>;
+            key-positions = <15 14>;
         };
 
-        combo_fp_minus {
+        combo_gp_minus {
             bindings = <&kp MINUS>;
-            key-positions = <13 19>;
+            key-positions = <19 14>;
         };
 
-        combo_fy_bracket {
+        combo_gy_bracket {
             bindings = <&td_bracket>;
-            key-positions = <13 5>;
+            key-positions = <5 14>;
         };
 
-        combo_fn_parenthesis {
+        combo_gn_parenthesis {
             bindings = <&td_parenthesis>;
-            key-positions = <13 26>;
+            key-positions = <26 14>;
         };
 
-        combo_mcomma_lang1 {
+        combo_ncomma_lang1 {
             bindings = <&kp LANG_HANGEUL>;
-            key-positions = <27 28>;
+            key-positions = <28 26>;
         };
 
-        combo_commaperiod_lang2 {
+        combo_nperiod_lang2 {
             bindings = <&kp LANG_HANJA>;
-            key-positions = <28 29>;
+            key-positions = <29 26>;
         };
 
         combo_vm_f1 {
@@ -426,6 +421,11 @@
         combo_vcx_leftnumpad {
             bindings = <&tog 2>;
             key-positions = <22 23 24>;
+        };
+
+        combo_fspace_ctrl_space {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <13 34>;
         };
     };
 
@@ -640,19 +640,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp E        &kp R    &kp T        &kp Y      &kp U    &kp I      &kp O    &kp SEMICOLON
-           &kp A  &kp S  &kp D        &kp F    &kp G        &kp M      &kp J    &kp K      &kp L    &kp P
-&kp GRAVE  &kp Z  &kp X  &kp C        &kp V    &kp B        &kp N      &kp M    &kp COMMA  &kp DOT  &kp FSLH       &kp NON_US_BACKSLASH
-                         &kp LS(TAB)  &kp TAB  &kp SPACE    &kp ENTER  &kp DEL  &kp BSPC
+           &kp Q  &kp W  &kp E        &kp R    &kp T        &kp Y      &kp U     &kp I       &kp O    &kp SEMICOLON
+           &kp A  &kp S  &kp D        &kp F    &kp G        &kp H      &kp J     &kp K       &kp L    &kp P
+&kp GRAVE  &kp Z  &kp X  &kp C        &kp V    &kp B        &kp N      &kp M     &kp COMMA   &kp DOT  &kp FSLH       &kp NON_US_BACKSLASH
+                         &kp LS(TAB)  &kp TAB  &kp SPACE    &kp ENTER  &kp BSPC  &kp DELETE
             >;
         };
 
         nav_layer {
             bindings = <
-       &none     &none         &none       &none      &none    &kp PG_UP  &kp HOME   &kp UP_ARROW  &kp END  &none
-       &kp LGUI  &kp LEFT_ALT  &kp LSHIFT  &kp LCTRL  &none    &kp PG_DN  &kp LEFT   &kp DOWN      &kp UP   &none
-&none  &none     &none         &none       &none      &none    &none      &none      &none         &none    &none  &none
-                               &none       &none      &none    &none      &kp PSCRN  &none
+       &none     &none         &none        &none      &none        &kp PG_UP  &kp HOME  &kp UP_ARROW  &kp END    &none
+       &kp LGUI  &kp LEFT_ALT  &kp LSHIFT   &kp LCTRL  &none        &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &none
+&none  &none     &none         &none        &none      &none        &none      &none     &none         &none      &none  &none
+                               &kp LS(TAB)  &kp TAB    &kp SPACE    &kp ENTER  &kp BSPC  &kp DELETE
             >;
         };
 
@@ -661,7 +661,7 @@
                &td_bracket  &kp N7  &kp N8       &kp N9   &kp N0             &trans     &trans     &trans      &trans    &trans
                &kp MINUS    &kp N4  &kp N5       &kp N6   &kp EQUAL          &trans     &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI
 &kp BACKSLASH  &kp SLASH    &kp N1  &kp N2       &kp N3   &td_parenthesis    &trans     &trans     &trans      &trans    &trans    &trans
-                                    &kp LS(TAB)  &kp TAB  &kp SPACE          &kp ENTER  &kp DEL    &kp BSPC
+                                    &kp LS(TAB)  &kp TAB  &kp SPACE          &kp ENTER  &kp BSPC   &kp DELETE
             >;
         };
 
@@ -670,7 +670,7 @@
         &trans    &none     &none        &none      &none        &mmv MOVE_Y(600)   &mmv MOVE_X(-600)  &mmv MOVE_UP    &mmv MOVE_X(600)  &trans
         &kp LGUI  &kp LALT  &kp LSHIFT   &kp LCTRL  &none        &mmv MOVE_Y(-600)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mkp LCLK
 &trans  &trans    &trans    &trans       &trans     &trans       &trans             &trans             &trans          &trans            &trans     &mkp RCLK
-                            &kp LS(TAB)  &kp TAB    &kp SPACE    &kp RET            &kp DEL            &kp BSPC
+                            &kp LS(TAB)  &kp TAB    &kp SPACE    &kp RET            &kp BSPC           &kp DELETE
             >;
         };
 
