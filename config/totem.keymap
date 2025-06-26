@@ -22,43 +22,6 @@
         compatible = "zmk,combos";
 
         // ▄▄▄▄ bluetooth
-
-        cb_bgraveaccent_bt0 {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <25 20>;
-            timeout-ms = <200>;
-        };
-
-        cb_ba_bt1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <25 10>;
-            timeout-ms = <200>;
-        };
-
-        cb_bs_bt2 {
-            bindings = <&bt BT_SEL 2>;
-            key-positions = <25 11>;
-            timeout-ms = <200>;
-        };
-
-        cb_bd_bt3 {
-            bindings = <&bt BT_SEL 3>;
-            key-positions = <25 12>;
-            timeout-ms = <200>;
-        };
-
-        cb_bf_bt4 {
-            bindings = <&bt BT_SEL 4>;
-            key-positions = <25 13>;
-            timeout-ms = <200>;
-        };
-
-        cb_bt_bt {
-            bindings = <&bt BT_CLR>;
-            key-positions = <25 4>;
-            timeout-ms = <200>;
-        };
-
         // ▄▄▄▄ modifiers
         // ▄▄▄▄ layers
 
@@ -101,6 +64,35 @@
         cb_layer_rt2_np {
             bindings = <&mo_to 2 2>;
             key-positions = <2 12>;
+        };
+
+        cb_layer_rt3_ms3 {
+            bindings = <&mo_to 4 4>;
+            key-positions = <3 2>;
+        };
+
+        cb_layer_rt3_ms1 {
+            bindings = <&mo_to 3 3>;
+            key-positions = <3 2 1>;
+            timeout-ms = <200>;
+        };
+
+        cb_layer_rt1_nav {
+            bindings = <&mo_to 1 1>;
+            key-positions = <2 1>;
+            timeout-ms = <200>;
+        };
+
+        cb_layer_rt2_np {
+            bindings = <&mo_to 1 1>;
+            key-positions = <1 3>;
+            timeout-ms = <200>;
+        };
+
+        cb_layer_rt4_fn {
+            bindings = <&mo_to 5 5>;
+            key-positions = <3 0>;
+            timeout-ms = <200>;
         };
     };
 
