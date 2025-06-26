@@ -26,11 +26,11 @@
 
         cb_layer_back {
             bindings = <&to 0>;
-            key-positions = <14 4>;
+            key-positions = <4 3>;
         };
 
-        cb_layer_right1 {
-            bindings = <&mo_to 8 7>;
+        cb_n4 {
+            bindings = <&kp N4>;
             key-positions = <3 13>;
         };
 
@@ -57,8 +57,8 @@
             timeout-ms = <200>;
         };
 
-        cb_np_3 {
-            bindings = <&mo_to 2 2>;
+        cb_n3 {
+            bindings = <&kp N3>;
             key-positions = <2 12>;
         };
 
@@ -92,6 +92,69 @@
         cb_lsemicolon_quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <18 19>;
+        };
+
+        cb_n1 {
+            bindings = <&kp N1>;
+            key-positions = <0 10>;
+        };
+
+        cb_n2 {
+            bindings = <&kp N2>;
+            key-positions = <1 11>;
+        };
+
+        cb_n5 {
+            bindings = <&kp N5>;
+            key-positions = <4 14>;
+        };
+
+        cb_n6 {
+            bindings = <&kp N6>;
+            key-positions = <5 15>;
+        };
+
+        cb_n7 {
+            bindings = <&kp N7>;
+            key-positions = <6 16>;
+        };
+
+        cb_n8 {
+            bindings = <&kp N8>;
+            key-positions = <7 17>;
+        };
+
+        cb_n9 {
+            bindings = <&kp N9>;
+            key-positions = <18 8>;
+        };
+
+        cb_n0 {
+            bindings = <&kp N0>;
+            key-positions = <19 9>;
+        };
+
+        cb_layer_back2 {
+            bindings = <&to 0>;
+            key-positions = <5 6>;
+        };
+
+        cb_layer_lt1_nav {
+            bindings = <&mo_to 6 6>;
+            key-positions = <7 8>;
+            timeout-ms = <200>;
+        };
+
+        cb_layer_lt2_np {
+            bindings = <&mo_to 7 7>;
+            key-positions = <8 6>;
+            timeout-ms = <200>;
+        };
+
+        cb_layer_lt4_fn {
+            bindings = <&mo_to 8 8>;
+            key-positions = <6 9>;
+            timeout-ms = <200>;
         };
     };
 
