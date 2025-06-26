@@ -21,157 +21,7 @@
     combos {
         compatible = "zmk,combos";
 
-        cb_fj_caps_word {
-            bindings = <&caps_word>;
-            key-positions = <13 16>;
-            layers = <0>;
-            timeout-ms = <200>;
-        };
-
-        cb_qw_esc {
-            bindings = <&td_esc_capslock>;
-            key-positions = <0 1>;
-            timeout-ms = <200>;
-            layers = <0>;
-        };
-
-        cb_as_gui_alt {
-            bindings = <&sk LA(LCMD)>;
-            key-positions = <10 11>;
-            timeout-ms = <200>;
-        };
-
-        cb_sd_alt_shift {
-            bindings = <&sk LA(LSHIFT)>;
-            key-positions = <11 12>;
-            timeout-ms = <200>;
-        };
-
-        cb_df_ctrl_shift {
-            bindings = <&sk LS(LCTRL)>;
-            key-positions = <12 13>;
-            timeout-ms = <200>;
-        };
-
-        cb_sf_ctrl_alt {
-            bindings = <&sk LA(LCTRL)>;
-            key-positions = <13 11>;
-            timeout-ms = <200>;
-        };
-
-        cb_ad_gui_shift {
-            bindings = <&sk LS(LEFT_GUI)>;
-            key-positions = <10 12>;
-            timeout-ms = <200>;
-        };
-
-        cb_af_gui_ctrl {
-            bindings = <&sk LC(LGUI)>;
-            key-positions = <10 13>;
-            timeout-ms = <200>;
-        };
-
-        cb_ag_gui {
-            bindings = <&sk LGUI>;
-            key-positions = <10 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_asd_gui_alt_shift {
-            bindings = <&sk LA(LS(LGUI))>;
-            key-positions = <10 11 12>;
-            timeout-ms = <200>;
-        };
-
-        cb_asf_gui_alt_ctrl {
-            bindings = <&sk LA(LC(LGUI))>;
-            key-positions = <10 11 13>;
-            timeout-ms = <200>;
-        };
-
-        cb_adf_gui_shift_ctrl {
-            bindings = <&sk LS(LC(LGUI))>;
-            key-positions = <10 12 13>;
-            timeout-ms = <200>;
-        };
-
-        cb_sdf_alt_shift_ctrl {
-            bindings = <&sk LS(LC(LALT))>;
-            key-positions = <11 12 13>;
-            timeout-ms = <200>;
-        };
-
-        cb_asdf_gui_alt_shift_ctrl {
-            bindings = <&sk LS(LA(LC(LGUI)))>;
-            key-positions = <10 11 12 13>;
-            timeout-ms = <200>;
-        };
-
-        cb_lp_gui_alt {
-            bindings = <&sk LA(LGUI)>;
-            key-positions = <18 19>;
-            timeout-ms = <200>;
-        };
-
-        cb_kl_shift_alt {
-            bindings = <&sk LA(LSHIFT)>;
-            key-positions = <17 18>;
-            timeout-ms = <200>;
-        };
-
-        cb_jk_ctrl_shift {
-            bindings = <&sk LC(LSHIFT)>;
-            key-positions = <16 17>;
-            timeout-ms = <200>;
-        };
-
-        cb_jp_ctrl_gui {
-            bindings = <&sk LC(LGUI)>;
-            key-positions = <16 19>;
-            timeout-ms = <200>;
-        };
-
-        cb_kp_shift_gui {
-            bindings = <&sk LS(LGUI)>;
-            key-positions = <17 19>;
-            timeout-ms = <200>;
-        };
-
-        cb_jl_ctrl_alt {
-            bindings = <&sk LC(LALT)>;
-            key-positions = <16 18>;
-            timeout-ms = <200>;
-        };
-
-        cb_klp_shift_alt_gui {
-            bindings = <&sk LS(LA(LGUI))>;
-            key-positions = <17 18 19>;
-            timeout-ms = <200>;
-        };
-
-        cb_jlp_ctrl_alt_gui {
-            bindings = <&sk LC(LA(LGUI))>;
-            key-positions = <16 18 19>;
-            timeout-ms = <200>;
-        };
-
-        cb_jkp_ctrl_shift_gui {
-            bindings = <&sk LS(LC(LGUI))>;
-            key-positions = <16 17 19>;
-            timeout-ms = <200>;
-        };
-
-        cb_jkl_ctrl_shift_alt {
-            bindings = <&sk LC(LS(LEFT_ALT))>;
-            key-positions = <16 17 18>;
-            timeout-ms = <200>;
-        };
-
-        cb_jklp_ctrl_shift_alt_gui {
-            bindings = <&sk LS(LA(LC(LGUI)))>;
-            key-positions = <16 17 18 19>;
-            timeout-ms = <200>;
-        };
+        // ▄▄▄▄ bluetooth
 
         cb_bgraveaccent_bt0 {
             bindings = <&bt BT_SEL 0>;
@@ -209,219 +59,10 @@
             timeout-ms = <200>;
         };
 
-        cb_gm_1 {
-            bindings = <&kp N1>;
-            key-positions = <27 14>;
-            timeout-ms = <200>;
-        };
+        // ▄▄▄▄ modifiers
 
-        cb_gcomma_2 {
-            bindings = <&kp N2>;
-            key-positions = <28 14>;
-            timeout-ms = <200>;
-        };
 
-        cb_gperiod_3 {
-            bindings = <&kp N3>;
-            key-positions = <29 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_gj_4 {
-            bindings = <&kp N4>;
-            key-positions = <16 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_gk_5 {
-            bindings = <&kp N5>;
-            key-positions = <17 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_gl_6 {
-            bindings = <&kp N6>;
-            key-positions = <18 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_gu_7 {
-            bindings = <&kp N7>;
-            key-positions = <6 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_gi_8 {
-            bindings = <&kp N8>;
-            key-positions = <7 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_go_9 {
-            bindings = <&kp N9>;
-            key-positions = <8 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_gsemicolon_0 {
-            bindings = <&kp N0>;
-            key-positions = <9 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_gh_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <15 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_gp_minus {
-            bindings = <&kp MINUS>;
-            key-positions = <19 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_gy_bracket {
-            bindings = <&td_bracket>;
-            key-positions = <5 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_gn_parenthesis {
-            bindings = <&td_parenthesis>;
-            key-positions = <26 14>;
-            timeout-ms = <200>;
-        };
-
-        cb_ncomma_lang1 {
-            bindings = <&kp LANG_HANGEUL>;
-            key-positions = <28 26>;
-            timeout-ms = <200>;
-        };
-
-        cb_nperiod_lang2 {
-            bindings = <&kp LANG_HANJA>;
-            key-positions = <29 26>;
-            timeout-ms = <200>;
-        };
-
-        cb_vm_f1 {
-            bindings = <&kp F1>;
-            key-positions = <24 27>;
-            timeout-ms = <200>;
-        };
-
-        cb_vcomma_f2 {
-            bindings = <&kp F2>;
-            key-positions = <24 28>;
-            timeout-ms = <200>;
-        };
-
-        cb_vperiod_f3 {
-            bindings = <&kp F3>;
-            key-positions = <24 29>;
-            timeout-ms = <200>;
-        };
-
-        cb_vj_f4 {
-            bindings = <&kp F4>;
-            key-positions = <24 16>;
-            timeout-ms = <200>;
-        };
-
-        cb_vk_f5 {
-            bindings = <&kp F5>;
-            key-positions = <24 17>;
-            timeout-ms = <200>;
-        };
-
-        cb_vl_f6 {
-            bindings = <&kp F6>;
-            key-positions = <24 18>;
-            timeout-ms = <200>;
-        };
-
-        cb_vu_f7 {
-            bindings = <&kp F7>;
-            key-positions = <24 6>;
-            timeout-ms = <200>;
-        };
-
-        cb_vi_f8 {
-            bindings = <&kp F8>;
-            key-positions = <24 7>;
-            timeout-ms = <200>;
-        };
-
-        cb_vo_f9 {
-            bindings = <&kp F9>;
-            key-positions = <24 8>;
-            timeout-ms = <200>;
-        };
-
-        cb_vsemicolon_f10 {
-            bindings = <&kp F10>;
-            key-positions = <24 9>;
-            timeout-ms = <200>;
-        };
-
-        cb_vp_f11 {
-            bindings = <&kp F11>;
-            key-positions = <24 19>;
-            timeout-ms = <200>;
-        };
-
-        cb_vslash_f12 {
-            bindings = <&kp F12>;
-            key-positions = <24 30>;
-            timeout-ms = <200>;
-        };
-
-        cb_vh_mute {
-            bindings = <&kp C_MUTE>;
-            key-positions = <24 15>;
-            timeout-ms = <200>;
-        };
-
-        cb_vu_volumeup {
-            bindings = <&kp C_VOLUME_UP>;
-            key-positions = <24 5>;
-            timeout-ms = <200>;
-        };
-
-        cb_vn_volumndown {
-            bindings = <&kp C_VOLUME_DOWN>;
-            key-positions = <24 26>;
-            timeout-ms = <200>;
-        };
-
-        cb_vui_brightup {
-            bindings = <&kp C_BRIGHTNESS_INC>;
-            key-positions = <24 6 7>;
-            timeout-ms = <200>;
-        };
-
-        cb_vmcomma_brightdown {
-            bindings = <&kp C_BRIGHTNESS_DEC>;
-            key-positions = <24 27 28>;
-            timeout-ms = <200>;
-        };
-
-        cb_vjk_bright_min {
-            bindings = <&kp C_BRIGHTNESS_MINIMUM>;
-            key-positions = <24 16 17>;
-            timeout-ms = <200>;
-        };
-
-        cb_vcx_left_numpad {
-            bindings = <&tog 2>;
-            key-positions = <22 23 24>;
-        };
-
-        from_here_v2 {
-            bindings = <&none>;
-            key-positions = <20 31>;
-        };
+        // ▄▄▄▄ layers
 
         cb_layer_back {
             bindings = <&to 0>;
@@ -431,6 +72,24 @@
         cb_layer_right1 {
             bindings = <&mo_to 4 2>;
             key-positions = <3 13>;
+        };
+
+
+
+        // ▄▄▄▄ keys
+
+        cb_fj_caps_word {
+            bindings = <&caps_word>;
+            key-positions = <13 16>;
+            layers = <0>;
+            timeout-ms = <200>;
+        };
+
+        cb_qw_esc {
+            bindings = <&td_esc_capslock>;
+            key-positions = <0 1>;
+            timeout-ms = <200>;
+            layers = <0>;
         };
     };
 
