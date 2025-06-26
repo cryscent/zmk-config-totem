@@ -21,8 +21,8 @@
     combos {
         compatible = "zmk,combos";
 
-        cb_fj_ctrl_f {
-            bindings = <&kp LC(F)>;
+        cb_fj_caps_word {
+            bindings = <&caps_word>;
             key-positions = <13 16>;
             layers = <0>;
             timeout-ms = <200>;
