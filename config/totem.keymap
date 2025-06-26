@@ -57,7 +57,7 @@
             timeout-ms = <200>;
         };
 
-        cb_layer_rt2_np {
+        cb_np_3 {
             bindings = <&mo_to 2 2>;
             key-positions = <2 12>;
         };
@@ -93,7 +93,6 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <18 19>;
         };
-
     };
 
     macros {
