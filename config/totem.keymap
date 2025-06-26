@@ -68,7 +68,7 @@
         };
 
         cb_layer_right1 {
-            bindings = <&mo_to 5 3>;
+            bindings = <&mo_to 8 7>;
             key-positions = <3 13>;
         };
 
@@ -368,55 +368,82 @@
 
         rt1_nav {
             bindings = <
-       &none     &none         &none       &none      &none        &kp PG_UP  &kp HOME  &kp UP_ARROW  &kp END    &none
-       &kp LGUI  &kp LEFT_ALT  &kp LSHIFT  &kp LCTRL  &none        &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &none
-&none  &none     &none         &none       &none      &none        &none      &none     &none         &none      &none  &none
-                               &none       &kp TAB    &kp SPACE    &kp ENTER  &kp BSPC  &kp DEL
+       &none  &none  &none  &none    &none        &kp PG_UP  &kp HOME  &kp UP_ARROW  &kp END    &none
+       &none  &none  &none  &none    &none        &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &none
+&none  &none  &none  &none  &none    &none        &none      &none     &none         &none      &none  &none
+                     &none  &kp TAB  &kp SPACE    &kp ENTER  &kp BSPC  &kp DEL
             >;
         };
 
         rt2_np {
             bindings = <
-       &none     &none     &none       &none      &none        &td_bracket      &kp N7    &kp N8   &kp N9  &kp N0
-       &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &none        &kp EQUAL        &kp N4    &kp N5   &kp N6  &kp MINUS
-&none  &none     &none     &none       &none      &none        &td_parenthesis  &kp N1    &kp N2   &kp N3  &kp SLASH  &none
-                           &none       &kp TAB    &kp SPACE    &kp ENTER        &kp BSPC  &kp DEL
+       &none  &none  &none  &none    &none        &td_bracket      &kp N7    &kp N8   &kp N9  &kp N0
+       &none  &none  &none  &none    &none        &kp EQUAL        &kp N4    &kp N5   &kp N6  &kp MINUS
+&none  &none  &none  &none  &none    &none        &td_parenthesis  &kp N1    &kp N2   &kp N3  &kp SLASH  &none
+                     &none  &kp TAB  &kp SPACE    &kp ENTER        &kp BSPC  &kp DEL
+            >;
+        };
+
+        rt3_ms1 {
+            bindings = <
+       &none  &none             &msc MOVE_Y(20)   &none            &none        &mmv MOVE_Y(200)   &mmv MOVE_X(-200)  &mmv MOVE_UP    &mmv MOVE_X(200)  &msc SCRL_UP
+       &none  &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_X(20)  &none        &mmv MOVE_Y(-200)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mkp LCLK
+&none  &none  &none             &none             &none            &none        &none              &msc SCRL_LEFT     &none           &msc SCRL_RIGHT   &msc SCRL_DOWN  &mkp RCLK
+                                &none             &kp TAB          &kp SPACE    &kp RET            &kp BSPC           &kp DELETE
+            >;
+        };
+
+        rt3_ms3 {
+            bindings = <
+       &none  &none  &none  &none    &none        &mmv MOVE_Y(600)   &mmv MOVE_X(-600)  &mouse_up_3x    &mmv MOVE_X(600)  &none
+       &none  &none  &none  &none    &none        &mmv MOVE_Y(-600)  &mouse_left_3x     &mouse_down_3x  &mouse_right_3x   &mkp LCLK
+&none  &none  &none  &none  &none    &none        &none              &none              &none           &none             &none      &mkp RCLK
+                     &none  &kp TAB  &kp SPACE    &kp RET            &kp BSPC           &kp DELETE
+            >;
+        };
+
+        rt4_fn {
+            bindings = <
+       &none  &none  &none        &none    &none        &none    &kp F7    &kp F8      &kp F9  &kp F10
+       &none  &none  &none        &none    &none        &none    &kp F4    &kp F5      &kp F6  &kp F11
+&none  &none  &none  &none        &none    &none        &none    &kp F1    &kp F2      &kp F3  &kp F12  &none
+                     &kp LS(TAB)  &kp TAB  &kp SPACE    &kp RET  &kp BSPC  &kp DELETE
+            >;
+        };
+
+        lt1_nav {
+            bindings = <
+       &none  &kp HOME  &kp UP       &kp END    &kp PG_UP    &none      &none     &none       &none  &none
+       &none  &kp LEFT  &kp DOWN     &kp RIGHT  &kp PG_DN    &none      &none     &none       &none  &none
+&none  &none  &none     &none        &none      &none        &none      &none     &none       &none  &none  &none
+                        &kp LS(TAB)  &kp TAB    &kp SPACE    &kp ENTER  &kp BSPC  &kp DELETE
             >;
         };
 
         lt2_np {
             bindings = <
-               &td_bracket  &kp N7  &kp N8       &kp N9   &kp N0             &trans     &trans     &trans      &trans    &trans
-               &kp MINUS    &kp N4  &kp N5       &kp N6   &kp EQUAL          &trans     &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI
-&kp BACKSLASH  &kp SLASH    &kp N1  &kp N2       &kp N3   &td_parenthesis    &trans     &trans     &trans      &trans    &trans    &trans
-                                    &kp LS(TAB)  &kp TAB  &kp SPACE          &kp ENTER  &kp BSPC   &kp DELETE
+               &td_bracket  &kp N7  &kp N8       &kp N9   &kp N0             &none      &none     &none       &none  &none
+               &kp MINUS    &kp N4  &kp N5       &kp N6   &kp EQUAL          &none      &none     &none       &none  &none
+&kp BACKSLASH  &kp SLASH    &kp N1  &kp N2       &kp N3   &td_parenthesis    &none      &none     &none       &none  &none  &none
+                                    &kp LS(TAB)  &kp TAB  &kp SPACE          &kp ENTER  &kp BSPC  &kp DELETE
             >;
         };
 
-        mouse_1x {
+        lt4_fn {
             bindings = <
-       &none     &mo 6     &none        &none      &none        &mmv MOVE_Y(200)   &mmv MOVE_X(-200)  &mmv MOVE_UP    &mmv MOVE_X(200)  &none
-       &kp LGUI  &kp LALT  &kp LSHIFT   &kp LCTRL  &none        &mmv MOVE_Y(-200)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mkp LCLK
-&none  &none     &none     &none        &none      &none        &none              &none              &none           &none             &none      &mkp RCLK
-                           &kp LS(TAB)  &kp TAB    &kp SPACE    &kp RET            &kp BSPC           &kp DELETE
+       &none  &kp F7  &kp F8       &kp F9   &kp F10      &none      &none     &none       &none  &none
+       &none  &kp F4  &kp F5       &kp F6   &kp F11      &none      &none     &none       &none  &none
+&none  &none  &kp F1  &kp F2       &kp F3   &kp F12      &none      &none     &none       &none  &none  &none
+                      &kp LS(TAB)  &kp TAB  &kp SPACE    &kp ENTER  &kp BSPC  &kp DELETE
             >;
         };
 
-        left_function {
+        bluetooth {
             bindings = <
-       &none  &kp F7  &kp F8       &kp F9   &kp F10      &trans     &trans     &trans      &trans    &trans
-       &none  &kp F4  &kp F5       &kp F6   &kp F11      &trans     &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI
-&none  &none  &kp F1  &kp F2       &kp F3   &kp F12      &trans     &trans     &trans      &trans    &trans    &trans
-                      &kp LS(TAB)  &kp TAB  &kp SPACE    &kp ENTER  &kp BSPC   &kp DELETE
-            >;
-        };
-
-        mouse_3x {
-            bindings = <
-        &trans    &none     &none        &none      &none        &mmv MOVE_Y(600)   &mmv MOVE_X(-600)  &mouse_up_3x    &mmv MOVE_X(600)  &trans
-        &kp LGUI  &kp LALT  &kp LSHIFT   &kp LCTRL  &none        &mmv MOVE_Y(-600)  &mouse_left_3x     &mouse_down_3x  &mouse_right_3x   &mkp LCLK
-&trans  &trans    &trans    &trans       &trans     &trans       &trans             &trans             &trans          &trans            &trans     &mkp RCLK
-                            &kp LS(TAB)  &kp TAB    &kp SPACE    &kp RET            &kp BSPC           &kp DELETE
+       &none         &none         &none         &none         &bt BT_CLR      &none         &none         &none         &none         &none
+       &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 3  &bt BT_SEL 1  &bt BT_SEL 0    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
+                                   &none         &none         &none           &none         &none         &none
             >;
         };
 
