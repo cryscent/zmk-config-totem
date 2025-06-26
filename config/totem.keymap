@@ -156,6 +156,56 @@
             key-positions = <6 9>;
             timeout-ms = <200>;
         };
+
+        cb_mod_ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <24 13>;
+        };
+
+        cb_mod_ctrl2 {
+            bindings = <&kp LCTRL>;
+            key-positions = <16 27>;
+        };
+
+        cb_mod_shift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <12 23>;
+        };
+
+        cb_mod_shift2 {
+            bindings = <&kp LSHIFT>;
+            key-positions = <17 28>;
+        };
+
+        cb_mod_alt {
+            bindings = <&kp LALT>;
+            key-positions = <11 22>;
+        };
+
+        cb_mod_alt2 {
+            bindings = <&kp LALT>;
+            key-positions = <18 29>;
+        };
+
+        cb_mod_gui {
+            bindings = <&kp LGUI>;
+            key-positions = <10 21>;
+        };
+
+        cb_mod_gui2 {
+            bindings = <&kp LGUI>;
+            key-positions = <19 30>;
+        };
+
+        cb_kor_eng {
+            bindings = <&kp LANG1>;
+            key-positions = <27 26>;
+        };
+
+        cb_chn {
+            bindings = <&kp LANG2>;
+            key-positions = <27 28>;
+        };
     };
 
     macros {
