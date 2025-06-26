@@ -33,19 +33,24 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_fj_caps_word {
-            bindings = <&caps_word>;
+        combo_fj_ctrl_f {
+            bindings = <&kp LC(F)>;
             key-positions = <13 16>;
+            layers = <0>;
+            timeout-ms = <200>;
         };
 
         combo_qw_esc {
             bindings = <&td_esc_capslock>;
             key-positions = <0 1>;
+            timeout-ms = <200>;
+            layers = <0>;
         };
 
         combo_as_gui_alt {
             bindings = <&sk LA(LCMD)>;
             key-positions = <10 11>;
+            timeout-ms = <200>;
         };
 
         combo_sd_alt_shift {
@@ -56,26 +61,31 @@
         combo_df_ctrl_shift {
             bindings = <&sk LS(LCTRL)>;
             key-positions = <12 13>;
+            timeout-ms = <200>;
         };
 
         combo_sf_ctrl_alt {
             bindings = <&sk LA(LCTRL)>;
             key-positions = <13 11>;
+            timeout-ms = <200>;
         };
 
         combo_ad_gui_shift {
             bindings = <&sk LS(LEFT_GUI)>;
             key-positions = <10 12>;
+            timeout-ms = <200>;
         };
 
         combo_af_gui_ctrl {
             bindings = <&sk LC(LGUI)>;
             key-positions = <10 13>;
+            timeout-ms = <200>;
         };
 
         combo_qs_alt {
             bindings = <&sk LALT>;
             key-positions = <0 11>;
+            timeout-ms = <200>;
         };
 
         combo_wd_shift {
@@ -447,6 +457,21 @@
             bindings = <&kp LC(SLASH)>;
             key-positions = <13 30>;
         };
+
+        from_here_v2 {
+            bindings = <&none>;
+            key-positions = <20 31>;
+        };
+
+        combo_layer_back {
+            bindings = <&to 0>;
+            key-positions = <14 4>;
+        };
+
+        combo_layer_right1 {
+            bindings = <&mo_to 4 2>;
+            key-positions = <3 13>;
+        };
     };
 
     macros {
@@ -649,6 +674,8 @@
             label = "TD_BRACKET";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+
+            tapping-term-ms = <350>;
         };
 
         td_esc_capslock: td_esc_capslock {
@@ -656,6 +683,8 @@
             label = "TD_ESC_CAPSLOCK";
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&kp CAPSLOCK>;
+
+            tapping-term-ms = <350>;
         };
 
         td_parenthesis: td_parenthesis {
@@ -663,6 +692,18 @@
             label = "TD_PARENTHESIS";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+
+            tapping-term-ms = <350>;
+        };
+
+        mo_to: mo_to {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_TO";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -688,19 +729,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp E        &kp R    &kp T        &kp Y      &kp U     &kp I       &kp O    &kp SEMICOLON
-           &kp A  &kp S  &kp D        &kp F    &kp G        &kp H      &kp J     &kp K       &kp L    &kp P
+           &kp Q  &kp W  &kp E        &kp R    &kp T        &kp Y      &kp U     &kp I       &kp O    &kp P
+           &kp A  &kp S  &kp D        &kp F    &kp G        &kp H      &kp J     &kp K       &kp L    &kp SEMICOLON
 &kp GRAVE  &kp Z  &kp X  &kp C        &kp V    &kp B        &kp N      &kp M     &kp COMMA   &kp DOT  &kp FSLH       &kp NON_US_BACKSLASH
                          &kp LS(TAB)  &kp TAB  &kp SPACE    &kp ENTER  &kp BSPC  &kp DELETE
             >;
         };
 
-        nav_layer {
+        rt1_nav {
             bindings = <
-       &none     &none         &none        &none      &none        &kp PG_UP  &kp HOME  &kp UP_ARROW  &kp END    &none
-       &kp LGUI  &kp LEFT_ALT  &kp LSHIFT   &kp LCTRL  &none        &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &none
-&none  &none     &none         &none        &none      &none        &none      &none     &none         &none      &none  &none
-                               &kp LS(TAB)  &kp TAB    &kp SPACE    &kp ENTER  &kp BSPC  &kp DELETE
+       &none     &none         &none       &none      &none     &kp PG_UP  &kp HOME  &kp UP_ARROW  &kp END    &none
+       &kp LGUI  &kp LEFT_ALT  &kp LSHIFT  &kp LCTRL  &none     &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &none
+&none  &none     &none         &none       &none      &none     &none      &none     &none         &none      &none  &none
+                               &trans      &trans     &trans    &trans     &trans    &trans
             >;
         };
 
@@ -737,6 +778,15 @@
         &kp LGUI  &kp LALT  &kp LSHIFT   &kp LCTRL  &none        &mmv MOVE_Y(-600)  &mouse_left_3x     &mouse_down_3x  &mouse_right_3x   &mkp LCLK
 &trans  &trans    &trans    &trans       &trans     &trans       &trans             &trans             &trans          &trans            &trans     &mkp RCLK
                             &kp LS(TAB)  &kp TAB    &kp SPACE    &kp RET            &kp BSPC           &kp DELETE
+            >;
+        };
+
+        rt2_np {
+            bindings = <
+        &trans    &trans    &trans      &trans     &trans    &td_bracket      &kp N7  &kp N8  &kp N9  &kp N0
+        &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &trans    &kp EQUAL        &kp N4  &kp N5  &kp N6  &kp MINUS
+&trans  &trans    &trans    &trans      &trans     &trans    &td_parenthesis  &kp N1  &kp N2  &kp N3  &kp SLASH  &trans
+                            &trans      &trans     &trans    &trans           &trans  &trans
             >;
         };
 
