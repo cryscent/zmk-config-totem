@@ -247,29 +247,46 @@
             timeout-ms = <200>;
         };
 
-        cb_vb_vdown {
-            bindings = <&kp C_VOL_DN>;
+        cb_vb_ctrl_v {
+            bindings = <&kp LC(V)>;
             key-positions = <24 25>;
         };
 
-        cb_cv_mute {
-            bindings = <&kp K_MUTE>;
+        cb_cv_ctrl_c {
+            bindings = <&kp LC(C)>;
             key-positions = <23 24>;
         };
 
-        cb_vol_up {
-            bindings = <&kp C_VOL_UP>;
+        cb_xc_ctrl_x {
+            bindings = <&kp LC(X)>;
             key-positions = <22 23>;
         };
 
-        cb_bri_up {
-            bindings = <&kp C_BRI_UP>;
+        cb_sd_ctrl_s {
+            bindings = <&kp LC(S)>;
             key-positions = <11 12>;
         };
 
-        cb_bri_dn {
-            bindings = <&kp C_BRI_DN>;
+        cb_fg_ctrl_f {
+            bindings = <&kp LC(F)>;
             key-positions = <13 14>;
+        };
+
+        cb_zx_ctrl_z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <21 22>;
+        };
+
+        cb_as_ctrl_a {
+            bindings = <&kp LC(A)>;
+            key-positions = <10 11>;
+        };
+
+        cb_op_backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <9 8>;
+            timeout-ms = <200>;
+            layers = <0>;
         };
     };
 
