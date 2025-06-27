@@ -456,10 +456,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y      &kp U       &kp I      &kp O    &kp P
-           &kp A  &kp S  &kp D  &kp F      &kp G        &kp H      &kp J       &kp K      &kp L    &kp SEMICOLON
-&kp GRAVE  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH       &kp NON_US_BACKSLASH
-                         &mo 5  &lt 1 TAB  &kp SPACE    &kp ENTER  &lt 4 BSPC  &lt 5 DEL
+             &kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y      &kp U       &kp I      &kp O    &kp P
+             &kp A  &kp S  &kp D  &kp F      &kp G        &kp H      &kp J       &kp K      &kp L    &kp SEMICOLON
+&lt 6 GRAVE  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH       &lt 6 BACKSLASH
+                           &mo 5  &lt 1 TAB  &kp SPACE    &kp ENTER  &lt 4 BSPC  &lt 5 DEL
             >;
         };
 
@@ -508,12 +508,12 @@
             >;
         };
 
-        rt_pinky {
+        pinky {
             bindings = <
-       &kp ESC    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &bt BT_CLR  &none  &none  &td_bracket
-       &kp EQUAL  &none         &none         &none         &none           &none         &none       &none  &none  &kp SINGLE_QUOTE
-&none  &kp MINUS  &none         &none         &none         &none           &none         &none       &none  &none  &caps_word        &none
-                                &none         &none         &none           &none         &none       &none
+       &td_esc_capslock  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &bt BT_CLR  &none  &none  &td_bracket
+       &kp EQUAL         &none         &none         &none         &none           &none         &none       &none  &none  &kp SINGLE_QUOTE
+&none  &kp MINUS         &none         &none         &none         &none           &none         &none       &none  &none  &none             &none
+                                       &none         &none         &none           &none         &none       &none
             >;
         };
 
