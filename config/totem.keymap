@@ -166,48 +166,6 @@
             layers = <0>;
             timeout-ms = <100>;
         };
-
-        cb_vb_ctrl_v {
-            bindings = <&kp LC(V)>;
-            key-positions = <24 25>;
-            timeout-ms = <100>;
-        };
-
-        cb_cv_ctrl_c {
-            bindings = <&kp LC(C)>;
-            key-positions = <23 24>;
-            timeout-ms = <100>;
-        };
-
-        cb_xc_ctrl_x {
-            bindings = <&kp LC(X)>;
-            key-positions = <22 23>;
-            timeout-ms = <100>;
-        };
-
-        cb_sd_ctrl_s {
-            bindings = <&kp LC(S)>;
-            key-positions = <11 12>;
-            timeout-ms = <100>;
-        };
-
-        cb_fg_ctrl_f {
-            bindings = <&kp LC(F)>;
-            key-positions = <13 14>;
-            timeout-ms = <100>;
-        };
-
-        cb_zx_ctrl_z {
-            bindings = <&kp LC(Z)>;
-            key-positions = <21 22>;
-            timeout-ms = <100>;
-        };
-
-        cb_as_ctrl_a {
-            bindings = <&kp LC(A)>;
-            key-positions = <10 11>;
-            timeout-ms = <100>;
-        };
     };
 
     macros {
@@ -474,39 +432,39 @@
             bindings = <
              &kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y      &kp U       &kp I      &kp O    &kp P
              &kp A  &kp S  &kp D  &kp F      &kp G        &kp H      &kp J       &kp K      &kp L    &kp SEMICOLON
-&lt 3 GRAVE  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH       &td_quote_backslashpipe
-                           &mo 2  &lt 1 TAB  &kp SPACE    &kp ENTER  &lt 4 BSPC  &kp DEL
+&lt 5 GRAVE  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH       &td_quote_backslashpipe
+                           &mo 3  &lt 1 TAB  &kp SPACE    &kp ENTER  &lt 4 BSPC  &kp DEL
             >;
         };
 
-        rt1_nav_vol_bri {
+        rt_ctrl_nav_vol_bri {
             bindings = <
        &kp C_BRI_UP  &kp C_BRI_DN  &kp C_VOL_UP  &kp K_MUTE  &kp C_VOL_DN    &kp PG_UP  &kp HOME  &kp UP_ARROW  &kp END    &none
-       &none         &none         &none         &none       &none           &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &none
-&none  &none         &none         &none         &none       &none           &none      &none     &none         &none      &none  &none
+       &kp LC(A)     &kp LC(S)     &none         &kp LC(F)   &none           &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &none
+&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)   &none           &none      &none     &none         &none      &none  &none
                                    &mo 3         &kp TAB     &kp SPACE       &kp ENTER  &kp BSPC  &kp DEL
             >;
         };
 
         rt3_ms1 {
             bindings = <
-       &td_esc_capslock  &none        &none  &none    &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)  &mmv MOVE_UP    &msc MOVE_X(10)  &none
-       &kp EQUAL         &td_bracket  &none  &none    &none        &msc MOVE_Y(-10)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&none  &kp MINUS         &mo 3        &none  &none    &none        &none             &none             &none           &none            &none      &mkp RCLK
-                                      &none  &kp TAB  &kp SPACE    &kp RET           &kp BSPC          &kp DELETE
+       &none  &none  &none  &none    &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)  &mmv MOVE_UP    &msc MOVE_X(10)  &none
+       &none  &none  &none  &none    &none        &msc MOVE_Y(-10)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&none  &none  &none  &none  &none    &none        &none             &none             &none           &none            &none      &mkp RCLK
+                     &none  &kp TAB  &kp SPACE    &kp RET           &kp BSPC          &kp DELETE
             >;
         };
 
         rt3_ms3 {
             bindings = <
-       &td_esc_capslock  &none        &none  &none    &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)    &mmv MOVE_Y(-3000)  &msc MOVE_X(20)    &none
-       &kp EQUAL         &td_bracket  &none  &none    &none        &msc MOVE_Y(-20)  &mmv MOVE_X(-3000)  &mmv MOVE_Y(3000)   &mmv MOVE_X(3000)  &mkp LCLK
-&none  &kp MINUS         &mo 2        &none  &none    &none        &none             &none               &none               &none              &none      &mkp RCLK
-                                      &none  &kp TAB  &kp SPACE    &kp RET           &kp BSPC            &kp DELETE
+       &td_esc_capslock  &none  &none  &none    &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)    &mmv MOVE_Y(-3000)  &msc MOVE_X(20)    &none
+       &kp GRAVE         &none  &none  &none    &none        &msc MOVE_Y(-20)  &mmv MOVE_X(-3000)  &mmv MOVE_Y(3000)   &mmv MOVE_X(3000)  &mkp LCLK
+&none  &mo 2             &none  &none  &none    &none        &none             &none               &none               &none              &none      &mkp RCLK
+                                &none  &kp TAB  &kp SPACE    &kp RET           &kp BSPC            &kp DELETE
             >;
         };
 
-        lt1_bt_fn {
+        lt_bt_fn {
             bindings = <
             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none      &kp F7    &kp F8      &kp F9  &kp F10
             &none         &none         &none         &none         &none           &none      &kp F4    &kp F5      &kp F6  &kp F11
@@ -515,12 +473,12 @@
             >;
         };
 
-        layer_5 {
+        pinky_np {
             bindings = <
-        &kp N1     &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-        &kp EQUAL  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp MINUS  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans    &trans  &trans  &trans
+       &kp N1     &kp N2  &kp N3  &kp N4  &kp N5    &kp N6           &kp N7  &kp N8  &kp N9  &kp N0
+       &kp EQUAL  &none   &none   &none   &none     &td_bracket      &kp N4  &kp N5  &kp N6  &none
+&none  &kp MINUS  &none   &none   &none   &none     &td_parenthesis  &kp N1  &kp N2  &kp N3  &none   &none
+                          &none   &none   &none     &none            &none   &none
             >;
         };
 
