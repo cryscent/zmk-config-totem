@@ -474,8 +474,8 @@
             bindings = <
              &kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y      &kp U       &kp I      &kp O    &kp P
              &kp A  &kp S  &kp D  &kp F      &kp G        &kp H      &kp J       &kp K      &kp L    &kp SEMICOLON
-&lt 2 GRAVE  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH       &td_quote_backslashpipe
-                           &mo 3  &lt 1 TAB  &kp SPACE    &kp ENTER  &lt 4 BSPC  &kp DEL
+&lt 3 GRAVE  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH       &td_quote_backslashpipe
+                           &mo 2  &lt 1 TAB  &kp SPACE    &kp ENTER  &lt 4 BSPC  &kp DEL
             >;
         };
 
@@ -490,10 +490,10 @@
 
         rt3_ms1 {
             bindings = <
-       &none  &none  &none  &none    &none        &msc MOVE_Y(-10)  &msc MOVE_X(-10)  &mmv MOVE_UP    &msc MOVE_X(10)  &none
-       &none  &none  &none  &none    &none        &msc MOVE_Y(10)   &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&none  &none  &none  &none  &none    &none        &none             &none             &none           &none            &none      &mkp RCLK
-                     &none  &kp TAB  &kp SPACE    &kp RET           &kp BSPC          &kp DELETE
+       &td_esc_capslock  &none        &none  &none    &none        &msc MOVE_Y(-10)  &msc MOVE_X(-10)  &mmv MOVE_UP    &msc MOVE_X(10)  &none
+       &kp EQUAL         &td_bracket  &none  &none    &none        &msc MOVE_Y(10)   &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&none  &kp MINUS         &mo 3        &none  &none    &none        &none             &none             &none           &none            &none      &mkp RCLK
+                                      &none  &kp TAB  &kp SPACE    &kp RET           &kp BSPC          &kp DELETE
             >;
         };
 
