@@ -490,19 +490,19 @@
 
         rt3_ms1 {
             bindings = <
-       &none  &none             &msc MOVE_Y(20)   &none            &none        &mmv MOVE_Y(200)   &mmv MOVE_X(-200)  &mmv MOVE_UP    &mmv MOVE_X(200)  &msc SCRL_UP
-       &none  &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_X(20)  &none        &mmv MOVE_Y(-200)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mkp LCLK
-&none  &none  &none             &none             &none            &none        &none              &msc SCRL_LEFT     &none           &msc SCRL_RIGHT   &msc SCRL_DOWN  &mkp RCLK
-                                &none             &kp TAB          &kp SPACE    &kp RET            &kp BSPC           &kp DELETE
+       &none  &none  &none  &none    &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)   &mmv MOVE_Y(200)   &msc MOVE_X(10)   &none
+       &none  &none  &none  &none    &none        &msc MOVE_Y(-10)  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &mkp LCLK
+&none  &none  &none  &none  &none    &none        &none             &none              &none              &none             &none      &mkp RCLK
+                     &none  &kp TAB  &kp SPACE    &kp RET           &kp BSPC           &kp DELETE
             >;
         };
 
         rt3_ms3 {
             bindings = <
-       &td_esc_capslock  &none        &none  &none    &none        &none    &none              &mmv MOVE_Y(600)   &none             &none
-       &kp EQUAL         &td_bracket  &none  &none    &none        &none    &mmv MOVE_X(-600)  &mmv MOVE_Y(-600)  &mmv MOVE_X(600)  &mkp LCLK
-&none  &kp MINUS         &mo 2        &none  &none    &none        &none    &none              &none              &none             &none      &mkp RCLK
-                                      &none  &kp TAB  &kp SPACE    &kp RET  &kp BSPC           &kp DELETE
+       &td_esc_capslock  &none        &none  &none    &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)   &mmv MOVE_Y(600)   &msc MOVE_X(20)   &none
+       &kp EQUAL         &td_bracket  &none  &none    &none        &msc MOVE_Y(-20)  &mmv MOVE_X(-600)  &mmv MOVE_Y(-600)  &mmv MOVE_X(600)  &mkp LCLK
+&none  &kp MINUS         &mo 2        &none  &none    &none        &none             &none              &none              &none             &none      &mkp RCLK
+                                      &none  &kp TAB  &kp SPACE    &kp RET           &kp BSPC           &kp DELETE
             >;
         };
 
