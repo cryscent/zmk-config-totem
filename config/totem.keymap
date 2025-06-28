@@ -499,10 +499,10 @@
 
         rt3_ms3 {
             bindings = <
-       &td_esc_capslock  &none        &none  &none    &none        &mmv MOVE_Y(600)   &mmv MOVE_X(-600)  &mouse_up_3x    &mmv MOVE_X(600)  &none
-       &kp EQUAL         &td_bracket  &none  &none    &none        &mmv MOVE_Y(-600)  &mouse_left_3x     &mouse_down_3x  &mouse_right_3x   &mkp LCLK
-&none  &kp MINUS         &mo 2        &none  &none    &none        &none              &none              &none           &none             &none      &mkp RCLK
-                                      &none  &kp TAB  &kp SPACE    &kp RET            &kp BSPC           &kp DELETE
+       &td_esc_capslock  &none        &none  &none    &none        &none    &none              &mmv MOVE_Y(600)   &none             &none
+       &kp EQUAL         &td_bracket  &none  &none    &none        &none    &mmv MOVE_X(-600)  &mmv MOVE_Y(-600)  &mmv MOVE_X(600)  &mkp LCLK
+&none  &kp MINUS         &mo 2        &none  &none    &none        &none    &none              &none              &none             &none      &mkp RCLK
+                                      &none  &kp TAB  &kp SPACE    &kp RET  &kp BSPC           &kp DELETE
             >;
         };
 
