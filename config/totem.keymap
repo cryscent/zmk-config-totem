@@ -193,7 +193,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT>;
             label = "NEW_MACRO";
-            wait-ms = <1>;
+            wait-ms = <10>;
             tap-ms = <1>;
         };
 
@@ -202,7 +202,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT>;
             label = "MOUSE_LEFT_3X";
-            wait-ms = <1>;
+            wait-ms = <10>;
             tap-ms = <1>;
         };
 
@@ -211,7 +211,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP>;
             label = "MOUSE_UP_5X";
-            wait-ms = <1>;
+            wait-ms = <10>;
             tap-ms = <1>;
         };
 
@@ -220,7 +220,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN>;
             label = "MOUSE_DOWN_5X";
-            wait-ms = <1>;
+            wait-ms = <10>;
             tap-ms = <1>;
         };
 
@@ -229,7 +229,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mouse_right_5x>;
             label = "MOUSE_ROGHT_10X";
-            wait-ms = <1>;
+            wait-ms = <10>;
             tap-ms = <1>;
         };
 
@@ -238,7 +238,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mouse_left_5x>;
             label = "MOUSE_LEFT_10X";
-            wait-ms = <1>;
+            wait-ms = <10>;
             tap-ms = <1>;
         };
 
@@ -247,7 +247,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mouse_up_5x>;
             label = "MOUSE_UP_10X";
-            wait-ms = <1>;
+            wait-ms = <10>;
             tap-ms = <1>;
         };
 
@@ -256,7 +256,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mouse_down_5x>;
             label = "MOUSE_DOWN_10X";
-            wait-ms = <1>;
+            wait-ms = <10>;
             tap-ms = <1>;
         };
     };
