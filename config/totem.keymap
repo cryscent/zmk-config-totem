@@ -254,7 +254,7 @@
         mouse_down_10x: mouse_down_10x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN>;
+            bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mouse_down_5x>;
             label = "MOUSE_DOWN_10X";
             wait-ms = <1>;
             tap-ms = <1>;
