@@ -17,6 +17,7 @@
     quick-tap-ms = <175>;
     tapping-term-ms = <280>;
     require-prior-idle-ms = <50>;
+    retro-tap;
 };
 
 / {
@@ -471,6 +472,130 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_PARENTHESIS>;
         };
+
+        td_f: td_f {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&mt LCTRL F>;
+        };
+
+        td_d: td_d {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_D";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&mt LSHIFT D>;
+        };
+
+        td_s: td_s {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_S";
+            #binding-cells = <0>;
+            bindings = <&kp S>, <&mt LALT S>;
+        };
+
+        td_a: td_a {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_A";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&mt LGUI A>;
+        };
+
+        td_j: td_j {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_J";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&mt LCTRL J>;
+        };
+
+        td_k: td_k {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_K";
+            #binding-cells = <0>;
+            bindings = <&kp K>, <&mt LSHIFT K>;
+        };
+
+        td_l: td_l {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_L";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&mt LALT L>;
+        };
+
+        td_semicolon: td_semicolon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SEMICOLON";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON>, <&mt LGUI SEMICOLON>;
+        };
+
+        td_tab_l_ctrl_r_nav_bracket_ins: td_tab_l_ctrl_r_nav_bracket_ins {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_TAB_L_CTRL_R_NAV_BRACKET_INS";
+            #binding-cells = <0>;
+            bindings = <&kp TAB>, <&lt 1 TAB>;
+        };
+
+        td_und_l_thumb_r_mmoderate: td_und_l_thumb_r_mmoderate {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_UND_L_THUMB_R_MMODERATE";
+            #binding-cells = <0>;
+            bindings = <&kp UNDERSCORE>, <&lt 3 UNDERSCORE>;
+        };
+
+        td_graveaccent_l_pinky_np: td_graveaccent_l_pinky_np {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_GRAVEACCENT_L_PINKY_NP";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE>, <&lt 5 GRAVE>;
+        };
+
+        td_bspc_bt_fn: td_bspc_bt_fn {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_BSPC_BT_FN";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&lt 4 BSPC>;
+        };
+
+        td_lclk_alt: td_lclk_alt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LCLK_ALT";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK>, <&hold_mkp LALT LCLK>;
+        };
+
+        layer_mkp: layer_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_MKP";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            retro-tap;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <50>;
+            flavor = "balanced";
+        };
+
+        hold_mkp: hold_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_MKP";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <50>;
+            flavor = "balanced";
+            retro-tap;
+        };
+
+        td_rclk_ctrl: td_rclk_ctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_RCLK_CTRL";
+            #binding-cells = <0>;
+            bindings = <&mkp RCLK>, <&hold_mkp LCTRL RCLK>;
+        };
     };
 
     keymap {
@@ -495,64 +620,64 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-             &kp Q  &kp W  &kp E        &kp R      &kp T        &kp Y      &kp U       &kp I      &kp O    &kp P
-             &kp A  &kp S  &kp D        &kp F      &kp G        &kp H      &kp J       &kp K      &kp L    &kp SEMICOLON
-&lt 5 GRAVE  &kp Z  &kp X  &kp C        &kp V      &kp B        &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH       &td_quote_backslashpipe
-                           &lt 3 UNDER  &lt 1 TAB  &kp SPACE    &kp ENTER  &lt 4 BSPC  &kp DEL
+                            &kp Q  &kp W  &kp E                        &kp R                             &kp T        &kp Y      &kp U           &kp I      &kp O    &kp P
+                            &td_a  &td_s  &td_d                        &td_f                             &kp G        &kp H      &td_j           &td_k      &td_l    &td_semicolon
+&td_graveaccent_l_pinky_np  &kp Z  &kp X  &kp C                        &kp V                             &kp B        &kp N      &kp M           &kp COMMA  &kp DOT  &kp FSLH       &td_quote_backslashpipe
+                                          &td_und_l_thumb_r_mmoderate  &td_tab_l_ctrl_r_nav_bracket_ins  &kp SPACE    &kp ENTER  &td_bspc_bt_fn  &kp DEL
             >;
         };
 
-        tab_lt_ctrl_rt_nav_bracket_ins {
+        tab_l_ctrl_r_nav_bracket_ins {
             bindings = <
-       &kp LC(Q)  &kp LC(W)  &kp LC(E)    &kp LC(R)  &kp LC(T)    &kp PG_UP  &kp HOME   &kp UP_ARROW                  &kp END                        &kp SCROLLLOCK
-       &kp LC(A)  &kp LC(S)  &kp LC(D)    &kp LC(F)  &kp LC(G)    &kp PG_DN  &kp LEFT   &kp DOWN                      &kp RIGHT                      &kp INSERT
-&none  &kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)  &kp LC(B)    &kp LC(N)  &kp LC(M)  &td_left_bracket_parenthesis  &td_right_bracket_parenthesis  &kp PRINTSCREEN  &none
-                             &lt 3 UNDER  &kp TAB    &kp SPACE    &kp ENTER  &kp BSPC   &kp DEL
+                  &kp LC(Q)  &kp LC(W)  &kp LC(E)                    &kp LC(R)                         &kp LC(T)    &kp PG_UP  &kp HOME        &kp UP_ARROW                  &kp END                        &kp SCROLLLOCK
+                  &kp LC(A)  &kp LC(S)  &kp LC(D)                    &kp LC(F)                         &kp LC(G)    &kp PG_DN  &kp LEFT        &kp DOWN                      &kp RIGHT                      &kp INSERT
+&td_esc_capslock  &kp LC(Z)  &kp LC(X)  &kp LC(C)                    &kp LC(V)                         &kp LC(B)    &kp LC(N)  &kp LC(M)       &td_left_bracket_parenthesis  &td_right_bracket_parenthesis  &kp PRINTSCREEN  &none
+                                        &td_und_l_thumb_r_mmoderate  &td_tab_l_ctrl_r_nav_bracket_ins  &kp SPACE    &kp ENTER  &td_bspc_bt_fn  &kp DEL
             >;
         };
 
         g_rt_mslow {
             bindings = <
-       &none  &none  &none  &none    &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)  &mmv MOVE_UP    &msc MOVE_X(10)  &none
-       &none  &none  &none  &none    &none        &msc MOVE_Y(-10)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&none  &none  &none  &none  &none    &none        &none             &none             &none           &none            &none      &mkp RCLK
-                     &none  &kp TAB  &kp SPACE    &kp RET           &kp BSPC          &kp DELETE
+       &none     &none         &none                        &none                             &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)  &mmv MOVE_UP    &msc MOVE_X(10)  &none
+       &kp LGUI  &td_lclk_alt  &kp LSHIFT                   &td_rclk_ctrl                     &none        &msc MOVE_Y(-10)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&none  &none     &none         &none                        &none                             &none        &none             &none             &none           &none            &none      &mkp RCLK
+                               &td_und_l_thumb_r_mmoderate  &td_tab_l_ctrl_r_nav_bracket_ins  &kp SPACE    &kp RET           &td_bspc_bt_fn    &kp DELETE
             >;
         };
 
-        lt_thumb_rt_mmoderate {
+        l_thumb_r_mmoderate {
             bindings = <
-       &none  &mkp LCLK  &none  &mkp RCLK  &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mouse_up_5x    &msc MOVE_X(20)  &none
-       &none  &none      &none  &none      &mo 2        &msc MOVE_Y(-20)  &mouse_left_5x    &mouse_down_5x  &mouse_right_5x  &mkp LCLK
-&none  &none  &none      &none  &none      &mo 6        &none             &none             &none           &none            &none      &mkp RCLK
-                         &none  &kp TAB    &kp SPACE    &kp RET           &kp BSPC          &kp DELETE
+       &none     &none         &mo 6                        &none                             &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mouse_up_5x    &msc MOVE_X(20)  &none
+       &kp LGUI  &td_lclk_alt  &kp LSHIFT                   &td_rclk_ctrl                     &none        &msc MOVE_Y(-20)  &mouse_left_5x    &mouse_down_5x  &mouse_right_5x  &mkp LCLK
+&none  &none     &none         &mo 2                        &none                             &none        &none             &none             &none           &none            &none      &mkp RCLK
+                               &td_und_l_thumb_r_mmoderate  &td_tab_l_ctrl_r_nav_bracket_ins  &kp SPACE    &kp RET           &td_bspc_bt_fn    &kp DELETE
             >;
         };
 
         bspc_bt_fn {
             bindings = <
-            &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp C_VOL_UP  &kp F7    &kp F8      &kp F9  &kp F10
-            &none         &none         &none         &none         &kp C_BRI_UP    &kp K_MUTE    &kp F4    &kp F5      &kp F6  &kp F11
-&bt BT_CLR  &none         &none         &none         &none         &kp C_BRI_DN    &kp C_VOL_DN  &kp F1    &kp F2      &kp F3  &kp F12  &none
-                                        &none         &kp TAB       &kp SPACE       &kp ENTER     &kp BSPC  &kp DELETE
+            &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2                 &bt BT_SEL 1                      &bt BT_SEL 0    &kp C_VOL_UP  &kp F7          &kp F8      &kp F9  &kp F10
+            &td_a         &td_s         &td_d                        &td_f                             &kp C_BRI_UP    &kp K_MUTE    &kp F4          &kp F5      &kp F6  &kp F11
+&bt BT_CLR  &none         &none         &none                        &none                             &kp C_BRI_DN    &kp C_VOL_DN  &kp F1          &kp F2      &kp F3  &kp F12  &none
+                                        &td_und_l_thumb_r_mmoderate  &td_tab_l_ctrl_r_nav_bracket_ins  &kp SPACE       &kp ENTER     &td_bspc_bt_fn  &kp DELETE
             >;
         };
 
-        lt_pinky_bracket_parenthesis_np {
+        l_pinky_np {
             bindings = <
-       &kp N1  &kp N2  &kp N3       &kp N4   &kp N5             &kp N6     &kp N7    &kp N8   &kp N9  &kp N0
-       &none   &none   &none        &none    &td_bracket        &kp EQUAL  &kp N4    &kp N5   &kp N6  &kp STAR
-&none  &none   &none   &none        &none    &td_parenthesis    &kp MINUS  &kp N1    &kp N2   &kp N3  &kp SLASH  &kp PLUS
-                       &lt 3 UNDER  &kp TAB  &kp SPACE          &kp ENTER  &kp BSPC  &kp DEL
+       &kp N1  &kp N2  &kp N3                       &kp N4                            &kp N5             &kp N6     &kp N7          &kp N8   &kp N9  &kp N0
+       &td_a   &td_s   &td_d                        &td_f                             &td_bracket        &kp EQUAL  &kp N4          &kp N5   &kp N6  &kp STAR
+&none  &none   &none   &none                        &none                             &td_parenthesis    &kp MINUS  &kp N1          &kp N2   &kp N3  &kp SLASH  &kp PLUS
+                       &td_und_l_thumb_r_mmoderate  &td_tab_l_ctrl_r_nav_bracket_ins  &kp SPACE          &kp ENTER  &td_bspc_bt_fn  &kp DEL
             >;
         };
 
         b_rt_mfast {
             bindings = <
-       &none  &none  &none  &none    &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)  &mmv MOVE_UP    &msc MOVE_X(10)  &none
-       &none  &none  &none  &none    &none        &msc MOVE_Y(-10)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&none  &none  &none  &none  &none    &none        &none             &none             &none           &none            &none      &mkp RCLK
-                     &none  &kp TAB  &kp SPACE    &kp RET           &kp BSPC          &kp DELETE
+       &none     &none         &none                        &none                             &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)  &mmv MOVE_UP    &msc MOVE_X(10)  &none
+       &kp LGUI  &td_lclk_alt  &kp LSHIFT                   &td_rclk_ctrl                     &none        &msc MOVE_Y(-10)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&none  &none     &none         &none                        &none                             &none        &none             &none             &none           &none            &none      &mkp RCLK
+                               &td_und_l_thumb_r_mmoderate  &td_tab_l_ctrl_r_nav_bracket_ins  &kp SPACE    &kp RET           &td_bspc_bt_fn    &kp DELETE
             >;
         };
 
