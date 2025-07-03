@@ -30,133 +30,7 @@
 
         // ▄▄▄▄ layers
         // ▄▄▄▄ modifiers
-
-        cb_mod_ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <24 13>;
-            timeout-ms = <110>;
-        };
-
-        cb_mod_ctrl2 {
-            bindings = <&kp LCTRL>;
-            key-positions = <16 27>;
-            timeout-ms = <110>;
-        };
-
-        cb_mod_shift {
-            bindings = <&kp LSHIFT>;
-            key-positions = <12 23>;
-            timeout-ms = <110>;
-        };
-
-        cb_mod_shift2 {
-            bindings = <&kp LSHIFT>;
-            key-positions = <17 28>;
-            timeout-ms = <110>;
-        };
-
-        cb_mod_alt {
-            bindings = <&kp LALT>;
-            key-positions = <11 22>;
-            timeout-ms = <110>;
-        };
-
-        cb_mod_alt2 {
-            bindings = <&kp LALT>;
-            key-positions = <18 29>;
-            timeout-ms = <110>;
-        };
-
-        cb_mod_gui {
-            bindings = <&kp LGUI>;
-            key-positions = <10 21>;
-            timeout-ms = <110>;
-        };
-
-        cb_mod_gui2 {
-            bindings = <&kp LGUI>;
-            key-positions = <19 30>;
-            timeout-ms = <110>;
-        };
-
         // ▄▄▄▄ keys
-
-        cb_fj_caps_word {
-            bindings = <&caps_word>;
-            key-positions = <13 16>;
-            layers = <0>;
-            timeout-ms = <110>;
-        };
-
-        cb_n1 {
-            bindings = <&kp N1>;
-            key-positions = <0 10>;
-            layers = <0>;
-            timeout-ms = <110>;
-        };
-
-        cb_n2 {
-            bindings = <&kp N2>;
-            key-positions = <1 11>;
-            layers = <0>;
-            timeout-ms = <110>;
-        };
-
-        cb_n3 {
-            bindings = <&kp N3>;
-            key-positions = <2 12>;
-            layers = <0>;
-            timeout-ms = <110>;
-        };
-
-        cb_n4 {
-            bindings = <&kp N4>;
-            key-positions = <3 13>;
-            layers = <0>;
-            timeout-ms = <110>;
-        };
-
-        cb_n5 {
-            bindings = <&kp N5>;
-            key-positions = <4 14>;
-            layers = <0>;
-            timeout-ms = <110>;
-        };
-
-        cb_n6 {
-            bindings = <&kp N6>;
-            key-positions = <5 15>;
-            layers = <0>;
-            timeout-ms = <110>;
-        };
-
-        cb_n7 {
-            bindings = <&kp N7>;
-            key-positions = <6 16>;
-            layers = <0>;
-            timeout-ms = <110>;
-        };
-
-        cb_n8 {
-            bindings = <&kp N8>;
-            key-positions = <7 17>;
-            layers = <0>;
-            timeout-ms = <110>;
-        };
-
-        cb_n9 {
-            bindings = <&kp N9>;
-            key-positions = <18 8>;
-            layers = <0>;
-            timeout-ms = <110>;
-        };
-
-        cb_n0 {
-            bindings = <&kp N0>;
-            key-positions = <19 9>;
-            layers = <0>;
-            timeout-ms = <110>;
-        };
 
         cb_kor_eng {
             bindings = <&kp LANG1>;
@@ -198,7 +72,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT>;
             label = "NEW_MACRO";
-            wait-ms = <10>;
+            wait-ms = <30>;
             tap-ms = <150>;
         };
 
@@ -207,7 +81,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT>;
             label = "MOUSE_LEFT_3X";
-            wait-ms = <10>;
+            wait-ms = <30>;
             tap-ms = <150>;
         };
 
@@ -216,7 +90,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP>;
             label = "MOUSE_UP_5X";
-            wait-ms = <10>;
+            wait-ms = <30>;
             tap-ms = <150>;
         };
 
@@ -225,7 +99,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN>;
             label = "MOUSE_DOWN_5X";
-            wait-ms = <10>;
+            wait-ms = <30>;
             tap-ms = <150>;
         };
 
@@ -234,7 +108,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mouse_right_5x>;
             label = "MOUSE_ROGHT_10X";
-            wait-ms = <10>;
+            wait-ms = <30>;
             tap-ms = <150>;
         };
 
@@ -243,7 +117,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mouse_left_5x>;
             label = "MOUSE_LEFT_10X";
-            wait-ms = <10>;
+            wait-ms = <30>;
             tap-ms = <150>;
         };
 
@@ -252,7 +126,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mouse_up_5x>;
             label = "MOUSE_UP_10X";
-            wait-ms = <10>;
+            wait-ms = <30>;
             tap-ms = <150>;
         };
 
@@ -261,7 +135,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mouse_down_5x>;
             label = "MOUSE_DOWN_10X";
-            wait-ms = <10>;
+            wait-ms = <30>;
             tap-ms = <150>;
         };
     };
@@ -631,11 +505,11 @@
             >;
         };
 
-        tab_l_ctrl_r_nav_bracket_ins {
+        tab_l_ctrl_r_nav_brket_ins_lang {
             bindings = <
                   &kp LC(Q)  &kp LC(W)  &kp LC(E)                    &kp LC(R)                         &kp LC(T)    &kp PG_UP  &kp HOME        &kp UP_ARROW                  &kp END                        &kp SCROLLLOCK
                   &kp LC(A)  &kp LC(S)  &kp LC(D)                    &kp LC(F)                         &kp LC(G)    &kp PG_DN  &kp LEFT        &kp DOWN                      &kp RIGHT                      &kp INSERT
-&td_esc_capslock  &kp LC(Z)  &kp LC(X)  &kp LC(C)                    &kp LC(V)                         &kp LC(B)    &kp LC(N)  &kp LC(M)       &td_left_bracket_parenthesis  &td_right_bracket_parenthesis  &kp PRINTSCREEN  &none
+&td_esc_capslock  &kp LC(Z)  &kp LC(X)  &kp LC(C)                    &kp LC(V)                         &kp LC(B)    &kp LANG1  &kp LANG2       &td_left_bracket_parenthesis  &td_right_bracket_parenthesis  &kp PRINTSCREEN  &none
                                         &td_und_l_thumb_r_mmoderate  &td_tab_l_ctrl_r_nav_bracket_ins  &kp SPACE    &kp ENTER  &td_bspc_bt_fn  &kp DEL
             >;
         };
