@@ -545,7 +545,7 @@
                   &kp LC(Q)  &kp LC(W)  &kp LC(E)    &kp LC(R)  &kp LC(T)    &kp PG_UP  &kp HOME    &kp UP_ARROW                  &kp END                        &kp SCROLLLOCK
                   &kp LGUI   &kp LALT   &kp LSHIFT   &kp LCTRL  &kp LC(G)    &kp PG_DN  &kp LEFT    &kp DOWN                      &kp RIGHT                      &kp INSERT
 &td_esc_capslock  &kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)  &kp LC(B)    &kp LC(N)  &kp LC(M)   &td_left_bracket_parenthesis  &td_right_bracket_parenthesis  &kp PRINTSCREEN  &kp BACKSLASH
-                                        &lt 3 UNDER  &lt 1 TAB  &kp SPACE    &kp ENTER  &lt 4 BSPC  &kp DEL
+                                        &lt 3 UNDER  &none      &kp SPACE    &kp ENTER  &lt 4 BSPC  &kp DEL
             >;
         };
 
@@ -560,19 +560,19 @@
 
         und_r_mmoderate {
             bindings = <
-       &none     &none                &mo 6        &none                 &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mouse_up_5x    &msc MOVE_X(20)  &none
-       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT   &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-20)  &mouse_left_5x    &mouse_down_5x  &mouse_right_5x  &mkp LCLK
-&none  &none     &none                &mo 2        &none                 &none        &none             &none             &none           &none            &none      &mkp RCLK
-                                      &lt 3 UNDER  &lt 1 TAB             &kp SPACE    &kp RET           &lt 4 BSPC        &kp DELETE
+       &none     &none                &mo 6       &none                 &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mouse_up_5x    &msc MOVE_X(20)  &none
+       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT  &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-20)  &mouse_left_5x    &mouse_down_5x  &mouse_right_5x  &mkp LCLK
+&none  &none     &none                &mo 2       &none                 &none        &none             &none             &none           &none            &none      &mkp RCLK
+                                      &none       &lt 1 TAB             &kp SPACE    &kp RET           &lt 4 BSPC        &kp DELETE
             >;
         };
 
         bspc_bt_fn {
             bindings = <
-            &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp C_VOL_UP  &kp F7      &kp F8      &kp F9  &kp F10
-            &kp LGUI      &kp LALT      &kp LSHIFT    &kp LCTRL     &kp C_BRI_UP    &kp K_MUTE    &kp F4      &kp F5      &kp F6  &kp F11
-&bt BT_CLR  &none         &none         &none         &none         &kp C_BRI_DN    &kp C_VOL_DN  &kp F1      &kp F2      &kp F3  &kp F12  &none
-                                        &lt 3 UNDER   &lt 1 TAB     &kp SPACE       &kp ENTER     &lt 4 BSPC  &kp DELETE
+            &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp C_VOL_UP  &kp F7  &kp F8      &kp F9  &kp F10
+            &kp LGUI      &kp LALT      &kp LSHIFT    &kp LCTRL     &kp C_BRI_UP    &kp K_MUTE    &kp F4  &kp F5      &kp F6  &kp F11
+&bt BT_CLR  &none         &none         &none         &none         &kp C_BRI_DN    &kp C_VOL_DN  &kp F1  &kp F2      &kp F3  &kp F12  &none
+                                        &lt 3 UNDER   &lt 1 TAB     &kp SPACE       &kp ENTER     &none   &kp DELETE
             >;
         };
 
