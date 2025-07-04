@@ -36,49 +36,124 @@
             bindings = <&kp LANGUAGE_1>;
             key-positions = <26 27 28>;
             layers = <0>;
+            slow-release;
         };
 
         cb_mcommaperiod_chn {
             bindings = <&kp LANGUAGE_2>;
             key-positions = <27 28 29>;
             layers = <0>;
+            slow-release;
         };
 
         cb_wer_esc {
             bindings = <&kp ESC>;
             key-positions = <1 2 3>;
             layers = <0>;
+            slow-release;
         };
 
         cb_ert_caps {
-            bindings = <&kp CAPS>;
+            bindings = <&none>;
             key-positions = <2 3 4>;
             layers = <0>;
+            slow-release;
         };
 
         cb_yui_pgup {
             bindings = <&kp PG_UP>;
             key-positions = <6 5 7>;
+            slow-release;
         };
 
         cb_hjk_pgdn {
             bindings = <&kp PG_DN>;
             key-positions = <15 16 17>;
+            slow-release;
         };
 
         cb_uio_home {
             bindings = <&kp HOME>;
             key-positions = <8 7 6>;
+            slow-release;
         };
 
-        cb_jkl_end {
+        cb_jk_ctrl_shift {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <16 17>;
+            slow-release;
+        };
+
+        cb_fd_ctrl_shift {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <12 13>;
+            slow-release;
+        };
+
+        cb_fs_ctrl_alt {
+            bindings = <&kp LA(LCTRL)>;
+            key-positions = <13 11>;
+            slow-release;
+        };
+
+        cb_ds_shift_alt {
+            bindings = <&kp LA(LSHIFT)>;
+            key-positions = <12 11>;
+            slow-release;
+        };
+
+        cb_fa_ctrl_gui {
+            bindings = <&kp LG(LCTRL)>;
+            key-positions = <10 13>;
+            slow-release;
+        };
+
+        cb_da_shift_gui {
+            bindings = <&kp LG(LSHIFT)>;
+            key-positions = <12 10>;
+            slow-release;
+        };
+
+        cb_sa_alt_gui {
+            bindings = <&kp LA(LGUI)>;
+            key-positions = <10 11>;
+            slow-release;
+        };
+
+        cb_jl_ctrl_shift {
+            bindings = <&kp LA(LCTRL)>;
+            key-positions = <16 18>;
+            slow-release;
+        };
+
+        cd_jsemicolon_ctrl_gui {
+            bindings = <&kp LG(LCTRL)>;
+            key-positions = <16 19>;
+            slow-release;
+        };
+
+        cb_ksemicolon_shit_gui {
+            bindings = <&kp LS(LGUI)>;
+            key-positions = <19 17>;
+            slow-release;
+        };
+
+        cb_kl_shift_alt {
+            bindings = <&kp LA(LSHFT)>;
+            key-positions = <18 17>;
+            slow-release;
+        };
+
+        cb_ksemicolon_alt_gui {
+            bindings = <&kp LA(LGUI)>;
+            key-positions = <18 19>;
+            slow-release;
+        };
+
+        cb_iop_end {
             bindings = <&kp END>;
-            key-positions = <16 17 18>;
-        };
-
-        cb_sdf_sql01 {
-            bindings = <&sql01>;
-            key-positions = <11 12 13>;
+            key-positions = <8 7 9>;
+            slow-release;
         };
     };
 
@@ -390,56 +465,56 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_F";
             #binding-cells = <0>;
-            bindings = <&kp F>, <&mt LCTRL F>;
+            bindings = <&kp F>, <&kp LCTRL>, <&kp F>;
         };
 
         td_d: td_d {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_D";
             #binding-cells = <0>;
-            bindings = <&kp D>, <&mt LSHIFT D>;
+            bindings = <&kp D>, <&kp LSHIFT>, <&kp D>;
         };
 
         td_s: td_s {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_S";
             #binding-cells = <0>;
-            bindings = <&kp S>, <&mt LALT S>;
+            bindings = <&kp S>, <&kp LALT>, <&kp S>;
         };
 
         td_a: td_a {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_A";
             #binding-cells = <0>;
-            bindings = <&kp A>, <&mt LGUI A>;
+            bindings = <&kp A>, <&kp LGUI>, <&kp A>;
         };
 
         td_j: td_j {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_J";
             #binding-cells = <0>;
-            bindings = <&kp J>, <&mt LCTRL J>;
+            bindings = <&kp J>, <&kp LCTRL>, <&kp J>;
         };
 
         td_k: td_k {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_K";
             #binding-cells = <0>;
-            bindings = <&kp K>, <&mt LSHIFT K>;
+            bindings = <&kp K>, <&kp LSHIFT>, <&kp K>;
         };
 
         td_l: td_l {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_L";
             #binding-cells = <0>;
-            bindings = <&kp L>, <&mt LALT L>;
+            bindings = <&kp L>, <&kp LALT>, <&kp L>;
         };
 
         td_semicolon: td_semicolon {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SEMICOLON";
             #binding-cells = <0>;
-            bindings = <&kp SEMICOLON>, <&mt LGUI SEMICOLON>;
+            bindings = <&kp SEMICOLON>, <&kp LGUI>, <&kp SEMICOLON>;
         };
 
         td_tab_l_ctrl_r_nav_bracket_ins: td_tab_l_ctrl_r_nav_bracket_ins {
@@ -470,26 +545,6 @@
             bindings = <&kp BSPC>, <&lt 4 BSPC>;
         };
 
-        td_lclk_alt: td_lclk_alt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LCLK_ALT";
-            #binding-cells = <0>;
-            bindings = <&mkp LCLK>, <&hold_mkp LALT LCLK>;
-        };
-
-        layer_mkp: layer_mkp {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_MKP";
-            bindings = <&mo>, <&mkp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            retro-tap;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <50>;
-            flavor = "balanced";
-        };
-
         hold_mkp: hold_mkp {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_MKP";
@@ -501,13 +556,6 @@
             require-prior-idle-ms = <50>;
             flavor = "balanced";
             retro-tap;
-        };
-
-        td_rclk_ctrl: td_rclk_ctrl {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_RCLK_CTRL";
-            #binding-cells = <0>;
-            bindings = <&mkp RCLK>, <&hold_mkp LCTRL RCLK>;
         };
     };
 
