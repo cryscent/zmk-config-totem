@@ -53,8 +53,8 @@
             slow-release;
         };
 
-        cb_ert_caps {
-            bindings = <&none>;
+        cb_ert_layer {
+            bindings = <&tog 3>;
             key-positions = <2 3 4>;
             layers = <0>;
             slow-release;
