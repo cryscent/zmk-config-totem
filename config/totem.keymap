@@ -44,7 +44,7 @@
             layers = <0>;
         };
 
-        cb_wer {
+        cb_wer_esc {
             bindings = <&kp ESC>;
             key-positions = <1 2 3>;
             layers = <0>;
@@ -54,6 +54,31 @@
             bindings = <&kp CAPS>;
             key-positions = <2 3 4>;
             layers = <0>;
+        };
+
+        cb_yui_pgup {
+            bindings = <&kp PG_UP>;
+            key-positions = <6 5 7>;
+        };
+
+        cb_hjk_pgdn {
+            bindings = <&kp PG_DN>;
+            key-positions = <15 16 17>;
+        };
+
+        cb_uio_home {
+            bindings = <&kp HOME>;
+            key-positions = <8 7 6>;
+        };
+
+        cb_jkl_end {
+            bindings = <&kp END>;
+            key-positions = <16 17 18>;
+        };
+
+        cb_sdf_sql01 {
+            bindings = <&sql01>;
+            key-positions = <11 12 13>;
         };
     };
 
