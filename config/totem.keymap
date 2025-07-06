@@ -53,33 +53,38 @@
             require-prior-idle-ms = <150>;
         };
 
-        cb_bv_layer_m {
-            bindings = <&tog 1>;
-            key-positions = <24 25>;
-            require-prior-idle-ms = <150>;
-        };
-
         cb_yui_pgup {
             bindings = <&kp PG_UP>;
             key-positions = <6 5 7>;
+            layers = <0>;
             require-prior-idle-ms = <150>;
         };
 
         cb_hjk_pgdn {
             bindings = <&kp PG_DN>;
             key-positions = <15 16 17>;
+            layers = <0>;
             require-prior-idle-ms = <150>;
         };
 
         cb_uio_home {
             bindings = <&kp HOME>;
             key-positions = <8 7 6>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_jkl_end {
+            bindings = <&kp END>;
+            key-positions = <16 17 18>;
+            layers = <0>;
             require-prior-idle-ms = <150>;
         };
 
         cb_jk_ctrl_shift {
             bindings = <&mc_wait200_r_homerow>;
             key-positions = <16 17>;
+            layers = <0>;
             require-prior-idle-ms = <150>;
         };
 
@@ -89,20 +94,22 @@
             require-prior-idle-ms = <150>;
         };
 
-        cb_jkl_end {
-            bindings = <&kp END>;
-            key-positions = <16 17 18>;
-            require-prior-idle-ms = <150>;
-        };
-
         cb_gf_ctrl {
             bindings = <&mc_wait200_l_homerow>;
             key-positions = <14 13>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_hj_ctrl {
             bindings = <&mc_wait200_l_homerow>;
             key-positions = <16 15>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_bv_layer_m {
+            bindings = <&tog 1>;
+            key-positions = <24 25>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_tr_layer_np {
