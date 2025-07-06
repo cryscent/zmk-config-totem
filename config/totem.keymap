@@ -5,6 +5,10 @@
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 기본값: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // 기본값: 10
+#undef MOVE_X
+#define MOVE_X(x) ((x) * ZMK_POINTING_DEFAULT_MOVE_VAL / 600)
+#undef MOVE_Y
+#define MOVE_Y(x) ((x) * ZMK_POINTING_DEFAULT_MOVE_VAL / 600)
 #define BASE 0
 #define NAV  1
 #define SYM  2
