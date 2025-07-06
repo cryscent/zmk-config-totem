@@ -7,15 +7,15 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // 기본값: 10
 // #undef MOVE_X
 // #define MOVE_X(x) ((x) * ZMK_POINTING_DEFAULT_MOVE_VAL / 600)
-// #undef MOVE_Y
-// #define MOVE_Y(x) ((x) * ZMK_POINTING_DEFAULT_MOVE_VAL / 600)
+//#undef MOVE_Y2
+//#define MOVE_Y2 1500
 
 // 마우스 이동 속도 상수 정의
-#define M1500 1500
-#define MOVE_RIGHT1500 M1500
-#define MOVE_LEFT1500 -M1500
-#define MOVE_UP1500 M1500
-#define MOVE_DOWN1500 -M1500
+//#define M1500 1500
+//#define MOVE_RIGHT1500 M1500
+//#define MOVE_LEFT1500 -M1500
+//#define MOVE_UP1500 M1500
+//#define MOVE_DOWN1500 -M1500
 
 // #define MOVE_X1800 1800   // 오른쪽 1800만큼 이동
 // #define MOVE_XM1800 -1800 // 왼쪽 1800만큼 이동
@@ -642,8 +642,8 @@
 
         und_e_r_mfast {
             bindings = <
-       &none     &none                &none        &none                 &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)   &mmv 0 -1500    &msc MOVE_X(10)     &none
-       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT   &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-10)  &mmv -1500 0       &mmv 0 1500     &mmv 1500 0         &mkp LCLK
+       &none     &none                &none        &none                 &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)   &mmv MOVE_UP    &msc MOVE_X(10)     &none
+       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT   &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-10)  &mmv -1500 0       &mmv MOVE_DOWN  &mmv 1500 0         &mkp LCLK
 &none  &none     &none                &none        &none                 &none        &none             &none              &none           &none               &none      &mkp RCLK
                                       &lt 1 UNDER  &lt 4 TAB             &kp SPACE    &kp RET           &lt 5 BSPC         &kp DELETE
             >;
