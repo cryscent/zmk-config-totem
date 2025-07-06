@@ -11,15 +11,15 @@
 // #define MOVE_Y(x) ((x) * ZMK_POINTING_DEFAULT_MOVE_VAL / 600)
 
 // 마우스 이동 속도 상수 정의
-#define MOVE_X1800 1800   // 오른쪽 1800만큼 이동
-#define MOVE_XM1800 -1800 // 왼쪽 1800만큼 이동
-#define MOVE_Y1800 1800   // 아래 1800만큼 이동
-#define MOVE_YM1800 -1800 // 위 1800만큼 이동
+// #define MOVE_X1800 1800   // 오른쪽 1800만큼 이동
+// #define MOVE_XM1800 -1800 // 왼쪽 1800만큼 이동
+// #define MOVE_Y1800 1800   // 아래 1800만큼 이동
+// #define MOVE_YM1800 -1800 // 위 1800만큼 이동
 
-#define MOVE_X3000 3000   // 오른쪽 3000만큼 이동
-#define MOVE_XM3000 -3000 // 왼쪽 3000만큼 이동
-#define MOVE_Y3000 3000   // 아래 3000만큼 이동
-#define MOVE_YM3000 -3000 // 위 3000만큼 이동
+// #define MOVE_X3000 3000   // 오른쪽 3000만큼 이동
+// #define MOVE_XM3000 -3000 // 왼쪽 3000만큼 이동
+// #define MOVE_Y3000 3000   // 아래 3000만큼 이동
+// #define MOVE_YM3000 -3000 // 위 3000만큼 이동
 
 #define BASE 0
 #define NAV  1
@@ -618,8 +618,8 @@
 
         und_r_mmoderate {
             bindings = <
-       &none     &none                &mo 3       &none                 &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mmv MOVE_YM1800 &msc MOVE_X(20)  &none
-       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT  &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-20)  &mmv MOVE_XM1800  &mmv MOVE_Y1800  &mmv MOVE_X1800  &mkp LCLK
+       &none     &none                &mo 3       &none                 &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mmv MOVE_UP     &msc MOVE_X(20)  &none
+       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT  &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-20)  &mmv MOVE_LEFT    &mmv MOVE_DWON   &mmv MOVE_RIGHT  &mkp LCLK
 &none  &none     &none                &mo 2       &none                 &none        &none             &none             &none            &none            &none      &mkp RCLK
                                       &none       &lt 4 TAB             &kp SPACE    &kp RET           &lt 5 BSPC        &kp DELETE
             >;
