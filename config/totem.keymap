@@ -5,23 +5,21 @@
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 기본값: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // 기본값: 10
+
 // #undef MOVE_X
 // #define MOVE_X(x) ((x) * ZMK_POINTING_DEFAULT_MOVE_VAL / 600)
 //#undef MOVE_Y2
 //#define MOVE_Y2 1500
-
 // 마우스 이동 속도 상수 정의
 //#define M1500 1500
 //#define MOVE_RIGHT1500 M1500
 //#define MOVE_LEFT1500 -M1500
 //#define MOVE_UP1500 M1500
 //#define MOVE_DOWN1500 -M1500
-
 // #define MOVE_X1800 1800   // 오른쪽 1800만큼 이동
 // #define MOVE_XM1800 -1800 // 왼쪽 1800만큼 이동
 // #define MOVE_Y1800 1800   // 아래 1800만큼 이동
 // #define MOVE_YM1800 -1800 // 위 1800만큼 이동
-
 // #define MOVE_X3000 3000   // 오른쪽 3000만큼 이동
 // #define MOVE_XM3000 -3000 // 왼쪽 3000만큼 이동
 // #define MOVE_Y3000 3000   // 아래 3000만큼 이동
@@ -114,30 +112,35 @@
             bindings = <&mc_wait200_l_homerow>;
             key-positions = <12 13>;
             require-prior-idle-ms = <150>;
+            layers = <0>;
         };
 
         cb_gf_ctrl {
             bindings = <&mc_wait200_l_homerow>;
             key-positions = <14 13>;
             require-prior-idle-ms = <150>;
+            layers = <0>;
         };
 
         cb_hj_ctrl {
             bindings = <&mc_wait200_l_homerow>;
             key-positions = <16 15>;
             require-prior-idle-ms = <150>;
+            layers = <0>;
         };
 
-        cb_bv_layer_m {
-            bindings = <&tog 1>;
+        cb_bv_tog_m {
+            bindings = <&mc_wait200_m>;
             key-positions = <24 25>;
             require-prior-idle-ms = <150>;
+            layers = <0 1>;
         };
 
-        cb_tr_layer_np {
-            bindings = <&tog 6>;
+        cb_tr_tog_np {
+            bindings = <&mc_wait200_np>;
             key-positions = <3 4>;
             require-prior-idle-ms = <150>;
+            layers = <0 6>;
         };
     };
 
@@ -263,6 +266,22 @@
             bindings = <&macro_wait_time 200>, <&mo 8>;
 
             label = "MC_WAIT200_R_HOMEROW";
+        };
+
+        mc_wait200_np: mc_wait200_np {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_wait_time 200>, <&tog 6>;
+
+            label = "MC_WAIT200_NP";
+        };
+
+        mc_wait200_m: mc_wait200_m {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_wait_time 200>, <&tog 1>;
+
+            label = "MC_WAIT200_M";
         };
     };
 
@@ -611,9 +630,7 @@
         compatible = "zmk,keymap";
 
         base {
-
             label = "BASE";
-
             bindings = <
              &kp Q    &kp W    &kp E             &kp R      &kp T        &kp Y      &kp U       &kp I      &kp O    &kp P
              &lt 7 A  &lt 7 S  &lt 7 D           &lt 7 F    &lt 7 G      &lt 8 H    &lt 8 J     &lt 8 K    &lt 8 L  &lt 8 SEMI
@@ -624,9 +641,9 @@
 
         und_r_mmoderate {
             bindings = <
-       &none     &none                &mo 3       &none                 &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mmv MOVE_UP     &msc MOVE_X(20)  &none
-       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT  &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-20)  &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &mkp LCLK
-&none  &none     &none                &mo 2       &none                 &none        &none             &none             &none            &none            &none      &mkp RCLK
+       &none     &none                &mo 3       &none                 &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mmv MOVE_UP    &msc MOVE_X(20)  &none
+       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT  &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-20)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&none  &none     &none                &mo 2       &none                 &none        &none             &none             &none           &none            &none      &mkp RCLK
                                       &none       &lt 4 TAB             &kp SPACE    &kp RET           &lt 5 BSPC        &kp DELETE
             >;
         };
@@ -642,10 +659,10 @@
 
         und_e_r_mfast {
             bindings = <
-       &none     &none                &none        &none                 &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)   &mmv MOVE_UP    &msc MOVE_X(10)     &none
-       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT   &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-10)  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &mkp LCLK
-&none  &none     &none                &none        &none                 &none        &none             &none              &none           &none               &none      &mkp RCLK
-                                      &lt 1 UNDER  &lt 4 TAB             &kp SPACE    &kp RET           &lt 5 BSPC         &kp DELETE
+       &none     &none                &none        &none                 &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)  &mmv MOVE_UP    &msc MOVE_X(10)  &none
+       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT   &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-10)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&none  &none     &none                &none        &none                 &none        &none             &none             &none           &none            &none      &mkp RCLK
+                                      &lt 1 UNDER  &lt 4 TAB             &kp SPACE    &kp RET           &lt 5 BSPC        &kp DELETE
             >;
         };
 
@@ -695,6 +712,5 @@
                            &lt 1 UNDERSCORE  &lt 4 TAB  &kp SPACE    &kp ENTER  &lt 5 BSPC  &kp DEL
             >;
         };
-
     };
 };
