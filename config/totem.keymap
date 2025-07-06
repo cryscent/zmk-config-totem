@@ -57,104 +57,103 @@
             bindings = <&tog 1>;
             key-positions = <2 3 4>;
             layers = <0>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_yui_pgup {
             bindings = <&kp PG_UP>;
             key-positions = <6 5 7>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_hjk_pgdn {
             bindings = <&kp PG_DN>;
             key-positions = <15 16 17>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_uio_home {
             bindings = <&kp HOME>;
             key-positions = <8 7 6>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_jk_ctrl_shift {
             bindings = <&kp LS(LCTRL)>;
             key-positions = <16 17>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_fd_ctrl_shift {
             bindings = <&mc_wait200_l_homerow>;
             key-positions = <12 13>;
-            slow-release;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_fs_ctrl_alt {
             bindings = <&kp LA(LCTRL)>;
             key-positions = <13 11>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_ds_shift_alt {
             bindings = <&kp LA(LSHIFT)>;
             key-positions = <12 11>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_fa_ctrl_gui {
             bindings = <&kp LG(LCTRL)>;
             key-positions = <10 13>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_da_shift_gui {
             bindings = <&kp LG(LSHIFT)>;
             key-positions = <12 10>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_sa_alt_gui {
             bindings = <&mc_wait250_l_homerow>;
             key-positions = <10 11>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_jl_ctrl_shift {
             bindings = <&kp LA(LCTRL)>;
             key-positions = <16 18>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cd_jsemicolon_ctrl_gui {
             bindings = <&kp LG(LCTRL)>;
             key-positions = <16 19>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_ksemicolon_shit_gui {
             bindings = <&kp LS(LGUI)>;
             key-positions = <19 17>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_kl_shift_alt {
             bindings = <&kp LA(LSHFT)>;
             key-positions = <18 17>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_ksemicolon_alt_gui {
             bindings = <&kp LA(LGUI)>;
             key-positions = <18 19>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
 
         cb_iop_end {
             bindings = <&kp END>;
             key-positions = <8 7 9>;
-            slow-release;
+            require-prior-idle-ms = <150>;
         };
     };
 
@@ -178,11 +177,11 @@
             label = "SQL01";
         };
 
-        mouse_right_5x: new_macro {
+        mouse_right_5x: mouse_right_5x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mmv MOVE_RIGHT &mmv MOVE_RIGHT>;
-            label = "NEW_MACRO";
+            label = "MOUSE_RIGHT_3X";
             wait-ms = <30>;
             tap-ms = <150>;
         };
@@ -434,8 +433,7 @@
             label = "TD_BRACKET";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
-
-            tapping-term-ms = <350>;
+            tapping-term-ms = <200>;
         };
 
         td_esc_capslock: td_esc_capslock {
@@ -443,8 +441,7 @@
             label = "TD_ESC_CAPSLOCK";
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&kp CAPSLOCK>;
-
-            tapping-term-ms = <350>;
+            tapping-term-ms = <200>;
         };
 
         td_parenthesis: td_parenthesis {
@@ -452,15 +449,13 @@
             label = "TD_PARENTHESIS";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
-
-            tapping-term-ms = <350>;
+            tapping-term-ms = <200>;
         };
 
         mo_to: mo_to {
             compatible = "zmk,behavior-hold-tap";
             label = "MO_TO";
             bindings = <&mo>, <&to>;
-
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
@@ -471,6 +466,7 @@
             label = "TD_QUOTE_BACKSLASHPIPE";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&kp BACKSLASH>;
+            tapping-term-ms = <200>;
         };
 
         td_quote_underscore: td_quote_underscore {
@@ -478,6 +474,7 @@
             label = "TD_QUOTE_UNDERSCORE";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&kp UNDER>;
+            tapping-term-ms = <200>;
         };
 
         td_left_bracket_parenthesis: td_left_bracket_parenthesis {
@@ -485,6 +482,7 @@
             label = "TD_LEFT_BRACKET_PARENTHESIS";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET>, <&kp LEFT_PARENTHESIS>;
+            tapping-term-ms = <200>;
         };
 
         td_right_bracket_parenthesis: td_right_bracket_parenthesis {
@@ -492,6 +490,7 @@
             label = "TD_RIGHT_BRACKET_PARENTHESIS";
             #binding-cells = <0>;
             bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_PARENTHESIS>;
+            tapping-term-ms = <200>;
         };
 
         td_f: td_f {
@@ -499,6 +498,7 @@
             label = "TD_F";
             #binding-cells = <0>;
             bindings = <&kp F>, <&kp LCTRL>, <&kp F>;
+            tapping-term-ms = <200>;
         };
 
         td_d: td_d {
@@ -506,6 +506,7 @@
             label = "TD_D";
             #binding-cells = <0>;
             bindings = <&kp D>, <&kp LSHIFT>, <&kp D>;
+            tapping-term-ms = <200>;
         };
 
         td_s: td_s {
@@ -513,6 +514,7 @@
             label = "TD_S";
             #binding-cells = <0>;
             bindings = <&kp S>, <&kp LALT>, <&kp S>;
+            tapping-term-ms = <200>;
         };
 
         td_a: td_a {
@@ -520,6 +522,7 @@
             label = "TD_A";
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp LGUI>, <&kp A>;
+            tapping-term-ms = <200>;
         };
 
         td_j: td_j {
@@ -527,6 +530,7 @@
             label = "TD_J";
             #binding-cells = <0>;
             bindings = <&kp J>, <&kp LCTRL>, <&kp J>;
+            tapping-term-ms = <200>;
         };
 
         td_k: td_k {
@@ -534,6 +538,7 @@
             label = "TD_K";
             #binding-cells = <0>;
             bindings = <&kp K>, <&kp LSHIFT>, <&kp K>;
+            tapping-term-ms = <200>;
         };
 
         td_l: td_l {
@@ -541,6 +546,7 @@
             label = "TD_L";
             #binding-cells = <0>;
             bindings = <&kp L>, <&kp LALT>, <&kp L>;
+            tapping-term-ms = <200>;
         };
 
         td_semicolon: td_semicolon {
@@ -548,6 +554,7 @@
             label = "TD_SEMICOLON";
             #binding-cells = <0>;
             bindings = <&kp SEMICOLON>, <&kp LGUI>, <&kp SEMICOLON>;
+            tapping-term-ms = <200>;
         };
 
         td_tab_l_ctrl_r_nav_bracket_ins: td_tab_l_ctrl_r_nav_bracket_ins {
@@ -555,6 +562,7 @@
             label = "TD_TAB_L_CTRL_R_NAV_BRACKET_INS";
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&lt 4 TAB>;
+            tapping-term-ms = <200>;
         };
 
         td_und_l_thumb_r_mmoderate: td_und_l_thumb_r_mmoderate {
@@ -562,6 +570,7 @@
             label = "TD_UND_L_THUMB_R_MMODERATE";
             #binding-cells = <0>;
             bindings = <&kp UNDERSCORE>, <&lt 1 UNDERSCORE>;
+            tapping-term-ms = <200>;
         };
 
         td_graveaccent_l_pinky_np: td_graveaccent_l_pinky_np {
@@ -569,6 +578,7 @@
             label = "TD_GRAVEACCENT_L_PINKY_NP";
             #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&lt 6 GRAVE>;
+            tapping-term-ms = <200>;
         };
 
         td_bspc_bt_fn: td_bspc_bt_fn {
@@ -576,6 +586,7 @@
             label = "TD_BSPC_BT_FN";
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&lt 5 BSPC>;
+            tapping-term-ms = <200>;
         };
 
         hold_mkp: hold_mkp {
