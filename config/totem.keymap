@@ -139,74 +139,74 @@
             label = "SQL01";
         };
 
-        mouse_right_5x: mouse_right_5x {
+        mouse_right_3x: mouse_right_3x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_RIGHT &mmv MOVE_RIGHT>;
+            bindings = <&mmv MOVE_X(1800)>;
             label = "MOUSE_RIGHT_3X";
             wait-ms = <30>;
             tap-ms = <150>;
         };
 
-        mouse_left_5x: mouse_left_3x {
+        mouse_left_3x: mouse_left_3x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_LEFT &mmv MOVE_LEFT>;
-            label = "MOUSE_LEFT_3X";
+            bindings = <&mmv MOVE_X(-1800)>;
+            label = "MOUSE_LEFT_3x";
             wait-ms = <30>;
             tap-ms = <150>;
         };
 
-        mouse_up_5x: mouse_up_5x {
+        mouse_up_3x: mouse_up_3x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_UP &mmv MOVE_UP>;
-            label = "MOUSE_UP_5X";
+            bindings = <&mmv MOVE_Y(-1800)>;
+            label = "MOUSE_UP_3x";
             wait-ms = <30>;
             tap-ms = <150>;
         };
 
-        mouse_down_5x: mouse_down_5x {
+        mouse_down_3x: mouse_down_3x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN>;
-            label = "MOUSE_DOWN_5X";
+            bindings = <&mmv MOVE_Y(1800)>;
+            label = "MOUSE_DOWN_3x";
             wait-ms = <30>;
             tap-ms = <150>;
         };
 
-        mouse_right_10x: mouse_roght_10x {
+        mouse_right_6x: mouse_roght_6x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT>;
-            label = "MOUSE_ROGHT_10X";
+            bindings = <&mmv MOVE_X(3600)>;
+            label = "MOUSE_ROGHT_6x";
             wait-ms = <30>;
             tap-ms = <150>;
         };
 
-        mouse_left_10x: mouse_left_10x {
+        mouse_left_6x: mouse_left_6x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT>;
-            label = "MOUSE_LEFT_10X";
+            bindings = <&mmv MOVE_X(-3600)>;
+            label = "MOUSE_LEFT_6x";
             wait-ms = <30>;
             tap-ms = <150>;
         };
 
-        mouse_up_10x: mouse_up_10x {
+        mouse_up_6x: mouse_up_6x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP>;
-            label = "MOUSE_UP_10X";
+            bindings = <&mmv MOVE_Y(-3600)>;
+            label = "MOUSE_UP_6x";
             wait-ms = <30>;
             tap-ms = <150>;
         };
 
-        mouse_down_10x: mouse_down_10x {
+        mouse_down_6x: mouse_down_6x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN>;
-            label = "MOUSE_DOWN_10X";
+            bindings = <&mmv MOVE_Y(3600)>;
+            label = "MOUSE_DOWN_6x";
             wait-ms = <30>;
             tap-ms = <150>;
         };
@@ -616,8 +616,8 @@
 
         und_r_mmoderate {
             bindings = <
-       &none     &none                &mo 3       &none                 &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mouse_up_5x    &msc MOVE_X(20)  &none
-       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT  &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-20)  &mouse_left_5x    &mouse_down_5x  &mouse_right_5x  &mkp LCLK
+       &none     &none                &mo 3       &none                 &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mouse_up_3x    &msc MOVE_X(20)  &none
+       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT  &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-20)  &mouse_left_3x    &mouse_down_3x  &mouse_right_3x  &mkp LCLK
 &none  &none     &none                &mo 2       &none                 &none        &none             &none             &none           &none            &none      &mkp RCLK
                                       &none       &lt 4 TAB             &kp SPACE    &kp RET           &lt 5 BSPC        &kp DELETE
             >;
