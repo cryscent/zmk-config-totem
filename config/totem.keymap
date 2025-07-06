@@ -642,10 +642,10 @@
 
         und_e_r_mfast {
             bindings = <
-       &none     &none                &none        &none                 &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)   &mmv MOVE_UP1500    &msc MOVE_X(10)     &none
-       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT   &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-10)  &mmv MOVE_LEFT1500 &mmv MOVE_DOWN1500  &mmv MOVE_RIGHT1500 &mkp LCLK
-&none  &none     &none                &none        &none                 &none        &none             &none              &none               &none               &none      &mkp RCLK
-                                      &lt 1 UNDER  &lt 4 TAB             &kp SPACE    &kp RET           &lt 5 BSPC        &kp DELETE
+       &none     &none                &none        &none                 &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)   &mmv 0 -1500    &msc MOVE_X(10)     &none
+       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT   &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-10)  &mmv -1500 0       &mmv 0 1500     &mmv 1500 0         &mkp LCLK
+&none  &none     &none                &none        &none                 &none        &none             &none              &none           &none               &none      &mkp RCLK
+                                      &lt 1 UNDER  &lt 4 TAB             &kp SPACE    &kp RET           &lt 5 BSPC         &kp DELETE
             >;
         };
 
