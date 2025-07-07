@@ -63,7 +63,7 @@
             require-prior-idle-ms = <150>;
         };
 
-        cb_uio_home {
+        cb_uio_home_end {
             bindings = <&td_home_end>;
             key-positions = <7 6 8>;
             layers = <0>;
@@ -94,13 +94,6 @@
         cb_gf_mod_c {
             bindings = <&mo 7>;
             key-positions = <14 13>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
-        cb_hj_mod_c {
-            bindings = <&mo 8>;
-            key-positions = <16 15>;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
