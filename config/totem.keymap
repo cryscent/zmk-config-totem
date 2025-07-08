@@ -419,7 +419,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET>, <&kp LEFT_PARENTHESIS>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
         };
 
         td_right_bracket_parenthesis: td_right_bracket_parenthesis {
@@ -428,7 +428,7 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_PARENTHESIS>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
         };
 
         td_f: td_f {
@@ -568,37 +568,37 @@
         base {
             label = "BASE";
             bindings = <
-             &kp Q  &kp W  &kp E        &kp R      &kp T        &kp Y      &kp U       &kp I      &kp O    &kp P
-             &kp A  &kp S  &kp D        &kp F      &kp G        &kp H      &kp J       &kp K      &kp L    &kp SEMI
-&lt 5 GRAVE  &kp Z  &kp X  &kp C        &kp V      &kp B        &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp SINGLE_QUOTE
-                           &lt 6 UNDER  &lt 4 TAB  &kp SPACE    &kp ENTER  &lt 5 BSPC  &kp DEL
+             &kp Q  &kp W  &kp E        &kp R      &kp T          &kp Y      &kp U       &kp I         &kp O    &kp P
+             &kp A  &kp S  &kp D        &kp F      &kp G          &kp H      &kp J       &kp K         &kp L    &kp SEMI
+&lt 5 GRAVE  &kp Z  &kp X  &kp C        &kp V      &kp B          &kp N      &kp M       &kp COMMA     &kp DOT  &kp FSLH  &kp SINGLE_QUOTE
+                           &lt 6 UNDER  &lt 7 TAB  &lt 4 SPACE    &kp ENTER  &lt 8 BSPC  &lt 5 DELETE
             >;
         };
 
         und_r_mmoderate {
             bindings = <
-       &none     &none                &mo 3       &none                 &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mmv MOVE_UP    &msc MOVE_X(20)  &none
-       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT  &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-20)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&to 0  &none     &none                &mo 2       &none                 &none        &none             &none             &none           &none            &none      &mkp RCLK
-                                      &kp UNDER   &lt 4 TAB             &kp SPACE    &kp RET           &lt 5 BSPC        &kp DELETE
+       &none     &none                &mo 3        &none                 &none          &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mmv MOVE_UP    &msc MOVE_X(20)  &none
+       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT   &hold_mkp LCTRL RCLK  &none          &msc MOVE_Y(-20)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&to 0  &none     &none                &mo 2        &none                 &none          &none             &none             &none           &none            &none      &mkp RCLK
+                                      &lt 6 UNDER  &lt 7 TAB             &lt 4 SPACE    &kp RET           &lt 8 BSPC        &lt 5 DEL
             >;
         };
 
         und_c_r_mslow {
             bindings = <
-       &none     &none                &none       &none                 &none        &msc MOVE_Y(10)   &msc MOVE_X(-10)  &mmv MOVE_UP    &msc MOVE_X(10)  &none
-       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT  &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-10)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&to 0  &none     &none                &none       &none                 &none        &none             &none             &none           &none            &none      &mkp RCLK
-                                      &kp UNDER   &lt 4 TAB             &kp SPACE    &kp RET           &lt 5 BSPC        &kp DELETE
+       &none     &none                &none        &none                 &none          &msc MOVE_Y(10)   &msc MOVE_X(-10)  &mmv MOVE_UP    &msc MOVE_X(10)  &none
+       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT   &hold_mkp LCTRL RCLK  &none          &msc MOVE_Y(-10)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&to 0  &none     &none                &none        &none                 &none          &none             &none             &none           &none            &none      &mkp RCLK
+                                      &lt 6 UNDER  &lt 7 TAB             &lt 4 SPACE    &kp RET           &lt 8 BSPC        &lt 5 DEL
             >;
         };
 
         und_e_r_mfast {
             bindings = <
-       &none     &none                &none       &none                 &none        &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mmv MOVE_UP    &msc MOVE_X(20)  &none
-       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT  &hold_mkp LCTRL RCLK  &none        &msc MOVE_Y(-20)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&to 0  &none     &none                &none       &none                 &none        &none             &none             &none           &none            &none      &mkp RCLK
-                                      &kp UNDER   &lt 4 TAB             &kp SPACE    &kp RET           &lt 5 BSPC        &kp DELETE
+       &none     &none                &none        &none                 &none          &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mmv MOVE_UP    &msc MOVE_X(20)  &none
+       &kp LGUI  &hold_mkp LALT LCLK  &kp LSHIFT   &hold_mkp LCTRL RCLK  &none          &msc MOVE_Y(-20)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&to 0  &none     &none                &none        &none                 &none          &none             &none             &none           &none            &none      &mkp RCLK
+                                      &lt 6 UNDER  &lt 7 TAB             &lt 4 SPACE    &kp RET           &lt 8 BSPC        &lt 5 DEL
             >;
         };
 
@@ -607,45 +607,45 @@
        &kp LC(Q)  &kp LC(W)  &kp LC(E)    &kp LC(R)  &kp LC(T)    &kp PG_UP  &kp HOME    &kp UP_ARROW                  &kp END                        &kp SCROLLLOCK
        &kp LGUI   &kp LALT   &kp LSHIFT   &kp LCTRL  &kp LC(G)    &kp PG_DN  &kp LEFT    &kp DOWN                      &kp RIGHT                      &kp INSERT
 &to 0  &kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)  &kp LC(B)    &kp LC(N)  &kp LC(M)   &td_left_bracket_parenthesis  &td_right_bracket_parenthesis  &kp PRINTSCREEN  &kp BACKSLASH
-                             &lt 6 UNDER  &none      &kp SPACE    &kp ENTER  &lt 5 BSPC  &kp DEL
+                             &lt 6 UNDER  &lt 7 TAB  &none        &kp ENTER  &lt 8 BSPC  &lt 5 DEL
             >;
         };
 
-        bspc_bt_fn {
+        del_bt_fn {
             bindings = <
-       &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp C_VOL_UP  &kp F7  &kp F8      &kp F9  &kp F10
-       &kp LGUI      &kp LALT      &kp LSHIFT    &kp LCTRL     &kp C_BRI_UP    &kp K_MUTE    &kp F4  &kp F5      &kp F6  &kp F11
-&none  &bt BT_CLR    &none         &none         &none         &kp C_BRI_DN    &kp C_VOL_DN  &kp F1  &kp F2      &kp F3  &kp F12  &none
-                                   &lt 6 UNDER   &lt 4 TAB     &kp SPACE       &kp ENTER     &none   &kp DELETE
+       &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp C_VOL_UP  &kp F7      &kp F8  &kp F9  &kp F10
+       &kp LGUI      &kp LALT      &kp LSHIFT    &kp LCTRL     &kp C_BRI_UP    &kp C_MUTE    &kp F4      &kp F5  &kp F6  &kp F11
+&to 0  &bt BT_CLR    &none         &none         &none         &kp C_BRI_DN    &kp C_VOL_DN  &kp F1      &kp F2  &kp F3  &kp F12  &none
+                                   &lt 6 UNDER   &lt 7 TAB     &lt 4 SPACE     &kp ENTER     &lt 8 BSPC  &none
             >;
         };
 
         r_np {
             bindings = <
-       &none     &none     &none       &none      &none              &kp N6     &kp N7      &kp N8   &kp N9  &kp N0
-       &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &td_bracket        &kp EQUAL  &kp N4      &kp N5   &kp N6  &kp STAR
-&to 0  &none     &none     &none       &none      &td_parenthesis    &kp MINUS  &kp N1      &kp N2   &kp N3  &kp SLASH  &kp PLUS
-                           &kp UNDER   &lt 4 TAB  &kp SPACE          &kp ENTER  &lt 5 BSPC  &kp DEL
+       &none     &none     &none       &none      &none              &kp N6     &kp N7      &kp N8     &kp N9  &kp N0
+       &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &td_bracket        &kp EQUAL  &kp N4      &kp N5     &kp N6  &kp STAR
+&to 0  &none     &none     &none       &none      &td_parenthesis    &kp MINUS  &kp N1      &kp N2     &kp N3  &kp SLASH  &kp PLUS
+                           &none       &lt 7 TAB  &lt 4 SPACE        &kp ENTER  &lt 8 BSPC  &lt 5 DEL
             >;
         };
 
         l_homerow_r_base {
             label = "r_BASE";
             bindings = <
-       &kp Q     &kp W     &kp E       &kp R      &kp T        &kp Y      &kp U       &kp I      &kp O    &kp P
-       &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &none        &kp H      &kp J       &kp K      &kp L    &kp SEMI
-&to 0  &kp Z     &kp X     &kp C       &kp V      &kp B        &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp SINGLE_QUOTE
-                           &kp UNDER   &lt 4 TAB  &kp SPACE    &kp ENTER  &lt 5 BSPC  &kp DEL
+       &kp Q     &kp W     &kp E        &kp R      &kp T          &kp Y      &kp U       &kp I      &kp O    &kp P
+       &kp LGUI  &kp LALT  &kp LSHIFT   &kp LCTRL  &kp G          &kp H      &kp J       &kp K      &kp L    &kp SEMI
+&to 0  &kp Z     &kp X     &kp C        &kp V      &kp B          &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp SINGLE_QUOTE
+                           &lt 6 UNDER  &none      &lt 4 SPACE    &kp ENTER  &lt 8 BSPC  &lt 5 DEL
             >;
         };
 
         r_homerow_l_base {
             label = "l_BASE";
             bindings = <
-       &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Y      &kp U       &kp I       &kp O     &kp P
-       &kp A  &kp S  &kp D      &kp F      &kp G        &none      &kp LCTRL   &kp LSHIFT  &kp LALT  &kp LGUI
-&to 0  &kp Z  &kp X  &kp C      &kp V      &kp B        &kp N      &kp M       &kp COMMA   &kp DOT   &kp FSLH  &kp SINGLE_QUOTE
-                     &kp UNDER  &lt 4 TAB  &kp SPACE    &kp ENTER  &lt 5 BSPC  &kp DEL
+       &kp Q  &kp W  &kp E        &kp R      &kp T          &kp Y      &kp U      &kp I       &kp O     &kp P
+       &kp A  &kp S  &kp D        &kp F      &kp G          &none      &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI
+&to 0  &kp Z  &kp X  &kp C        &kp V      &kp B          &kp N      &kp M      &kp COMMA   &kp DOT   &kp FSLH  &kp SINGLE_QUOTE
+                     &lt 6 UNDER  &lt 7 TAB  &lt 4 SPACE    &kp ENTER  &none      &lt 5 DEL
             >;
         };
     };
