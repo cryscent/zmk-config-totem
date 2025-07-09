@@ -62,14 +62,14 @@
 
         cb_bv_tog_np {
             bindings = <&mc_wait200_tog_np>;
-            key-positions = <24 25>;
+            key-positions = <24 25 23>;
             require-prior-idle-ms = <150>;
             layers = <0 6 7 8>;
         };
 
-        cb_cx_tog_nav {
+        cb_vcx_tog_nav {
             bindings = <&mc_wait200_tog_nav>;
-            key-positions = <24 23>;
+            key-positions = <24 23 22>;
             require-prior-idle-ms = <150>;
             layers = <0 7 8 4>;
         };
