@@ -30,65 +30,16 @@
 
         // ▄▄▄▄▄▄▄▄ cb mod
 
-        cb_gf_mod_c {
-            bindings = <&mo 7>;
+        cb_gf_tog_btfn {
+            bindings = <&mc_tog_btfn>;
             key-positions = <14 13>;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
 
-        cb_hj_pgdn_mod_c {
-            bindings = <&lt 8 PG_DN>;
+        cb_hj_pgdn {
+            bindings = <&kp PG_DN>;
             key-positions = <15 16>;
-            layers = <0>;
-            require-prior-idle-ms = <150>;
-        };
-
-        cb_hk_mod_s {
-            bindings = <&mo 8>;
-            key-positions = <15 17>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
-        cb_gd_mod_s {
-            bindings = <&mo 7>;
-            key-positions = <14 12>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
-        cb_hl_mod_a {
-            bindings = <&mo 8>;
-            key-positions = <15 18>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
-        cb_gs_mod_a {
-            bindings = <&mo 7>;
-            key-positions = <14 11>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
-        cb_hsemi_mod_g {
-            bindings = <&mo 8>;
-            key-positions = <15 19>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
-        cb_ga_mod_g {
-            bindings = <&mo 7>;
-            key-positions = <14 10>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
-        cb_jk_mod_cs {
-            bindings = <&mo 8>;
-            key-positions = <16 17>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
@@ -96,34 +47,6 @@
         cb_fd_mute {
             bindings = <&kp C_MUTE>;
             key-positions = <12 13>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
-        cb_jl_mod_ca {
-            bindings = <&mo 8>;
-            key-positions = <16 18>;
-            layers = <0>;
-            require-prior-idle-ms = <150>;
-        };
-
-        cb_fs_mod_ca {
-            bindings = <&mo 8>;
-            key-positions = <13 11>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
-        cb_jsemi_mod_cg {
-            bindings = <&mo 8>;
-            key-positions = <16 19>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
-        cb_fa_mod_cg {
-            bindings = <&mo 7>;
-            key-positions = <13 10>;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -298,6 +221,14 @@
             bindings = <&macro_wait_time 200>, <&tog 6>;
 
             label = "MC_WAIT200_TOG_NP";
+        };
+
+        mc_tog_btfn: mc_tog_btfn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_wait_time 200>, <&tog 5>;
+
+            label = "MC_TOG_BTFN";
         };
     };
 
