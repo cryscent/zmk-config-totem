@@ -31,8 +31,8 @@
         // ▄▄▄▄▄▄▄▄ cb mod
 
         cb_gf_tog_btfn {
-            bindings = <&mc_tog_btfn>;
-            key-positions = <14 13>;
+            bindings = <&mc_wait200_tog_btfn>;
+            key-positions = <14 13 12>;
             require-prior-idle-ms = <150>;
             layers = <0 5 7 8>;
         };
@@ -44,18 +44,11 @@
             require-prior-idle-ms = <150>;
         };
 
-        cb_fd_mute {
-            bindings = <&kp C_MUTE>;
-            key-positions = <12 13>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
         // ▄▄▄▄▄▄▄▄ cb layer
 
         cb_tr_tog_m {
             bindings = <&mc_wait200_tog_m>;
-            key-positions = <3 4>;
+            key-positions = <3 4 2>;
             require-prior-idle-ms = <150>;
             layers = <0 1 7 8>;
         };
@@ -104,6 +97,11 @@
             bindings = <&td_home_end>;
             key-positions = <7 6 8>;
             require-prior-idle-ms = <150>;
+        };
+
+        cb_qwe_capsword {
+            bindings = <&caps_word>;
+            key-positions = <0 1 2>;
         };
     };
 
@@ -223,7 +221,7 @@
             label = "MC_WAIT200_TOG_NP";
         };
 
-        mc_tog_btfn: mc_tog_btfn {
+        mc_wait200_tog_btfn: mc_tog_btfn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_wait_time 200>, <&tog 5>;
