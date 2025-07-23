@@ -81,8 +81,8 @@
             require-prior-idle-ms = <150>;
         };
 
-        cb_wer_esc_caps {
-            bindings = <&td_esc_capslock>;
+        cb_wer_esc_capsword {
+            bindings = <&td_esc_capsword>;
             key-positions = <1 2 3>;
             require-prior-idle-ms = <150>;
         };
@@ -99,8 +99,8 @@
             require-prior-idle-ms = <150>;
         };
 
-        cb_qwe_capsword {
-            bindings = <&caps_word>;
+        cb_qwe_capslock {
+            bindings = <&kp CAPS>;
             key-positions = <0 1 2>;
         };
     };
@@ -296,11 +296,11 @@
             tapping-term-ms = <200>;
         };
 
-        td_esc_capslock: td_esc_capslock {
+        td_esc_capsword: td_esc_capsword {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_ESC_CAPSLOCK";
+            label = "TD_ESC_CAPSWORD";
             #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp CAPSLOCK>;
+            bindings = <&kp ESC>, <&caps_word>;
 
             tapping-term-ms = <200>;
         };
