@@ -103,6 +103,11 @@
             bindings = <&kp CAPS>;
             key-positions = <0 1 2>;
         };
+
+        cb_dgraveaccent_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <20 12>;
+        };
     };
 
     macros {
