@@ -486,10 +486,10 @@
 
         und_r_mmoderate {
             bindings = <
-       &msc MOVE_X(-20)  &mkp LCLK            &mo 3        &mkp RCLK             &msc MOVE_X(20)     &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mmv MOVE_UP    &msc MOVE_X(20)  &none
-       &kp LGUI          &hold_mkp LALT LCLK  &kp LSHIFT   &hold_mkp LCTRL RCLK  &msc MOVE_Y(20)     &msc MOVE_Y(-20)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&none  &none             &none                &mo 2        &none                 &msc MOVE_Y(-20)    &none             &none             &none           &none            &none      &mkp RCLK
-                                              &lt 6 UNDER  &lt 7 TAB             &lt 4 SPACE         &kp RET           &lt 8 BSPC        &lt 5 DEL
+       &msc MOVE_X(-20)  &mkp LCLK  &none        &mkp RCLK  &msc MOVE_X(20)     &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mmv MOVE_UP    &msc MOVE_X(20)  &none
+       &kp LGUI          &kp LALT   &kp LSHIFT   &kp LCTRL  &msc MOVE_Y(20)     &msc MOVE_Y(-20)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&none  &none             &none      &none        &none      &msc MOVE_Y(-20)    &none             &none             &none           &none            &none      &mkp RCLK
+                                    &lt 6 UNDER  &lt 7 TAB  &lt 4 SPACE         &kp RET           &lt 8 BSPC        &lt 5 DEL
             >;
         };
 
