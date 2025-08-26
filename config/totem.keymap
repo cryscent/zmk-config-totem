@@ -531,9 +531,9 @@
         r_homerow_l_base {
             label = "l_BASE";
             bindings = <
-           &kp Q  &kp W  &kp E        &kp R      &kp T          &kp PG_UP  &kp HOME   &mkp LCLK   &kp END   &none
+           &kp Q  &kp W  &kp E        &kp R      &kp T          &kp PG_UP  &kp HOME   &mkp LCLK   &kp END   &mkp LCLK
            &kp A  &kp S  &kp D        &kp F      &kp G          &kp PG_DN  &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI
-&kp GRAVE  &kp Z  &kp X  &kp C        &kp V      &kp B          &none      &to 6      &to 4       &to 5     &to 0     &none
+&kp GRAVE  &kp Z  &kp X  &kp C        &kp V      &kp B          &none      &to 6      &to 4       &to 5     &to 0      &none
                          &lt 6 UNDER  &lt 7 TAB  &lt 4 SPACE    &kp ENTER  &none      &lt 5 DEL
             >;
         };
