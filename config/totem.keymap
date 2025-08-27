@@ -42,6 +42,21 @@
             bindings = <&to 0>;
             key-positions = <22 23 24>;
         };
+
+        cb_uio_np {
+            bindings = <&to 6>;
+            key-positions = <8 7 6>;
+        };
+
+        cb_mltgt_base {
+            bindings = <&to 0>;
+            key-positions = <27 28 29>;
+        };
+
+        cb_yui_nav {
+            bindings = <&to 4>;
+            key-positions = <7 5 6>;
+        };
     };
 
     macros {
