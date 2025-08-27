@@ -253,7 +253,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
         };
 
         td_esc_capsword: td_esc_capsword {
@@ -271,7 +271,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
         };
 
         mo_to: mo_to {
@@ -458,6 +458,15 @@
 
             tapping-term-ms = <220>;
         };
+
+        td_kor_eng_chn: td_kor_eng_chn {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_KOR_ENG_CHN";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1>, <&kp LANGUAGE_2>;
+
+            tapping-term-ms = <220>;
+        };
     };
 
     keymap {
@@ -540,10 +549,10 @@
         r_homerow_l_base {
             label = "l_BASE";
             bindings = <
-           &kp Q  &kp W  &kp E        &kp R      &kp T          &kp PG_UP       &kp HOME        &mkp LCLK   &kp END   &mkp RCLK
-           &kp A  &kp S  &kp D        &kp F      &kp G          &kp PG_DN       &kp LCTRL       &kp LSHIFT  &kp LALT  &kp LGUI
-&kp GRAVE  &kp Z  &kp X  &kp C        &kp V      &kp B          &kp LANGUAGE_1  &kp LANGUAGE_2  &none       &none     &none      &none
-                         &lt 6 UNDER  &lt 7 TAB  &lt 4 SPACE    &kp ENTER       &none           &lt 5 DEL
+           &kp Q  &kp W  &kp E        &kp R      &kp T          &kp PG_UP        &kp HOME   &mkp LCLK   &kp END   &mkp RCLK
+           &kp A  &kp S  &kp D        &kp F      &kp G          &kp PG_DN        &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI
+&kp GRAVE  &kp Z  &kp X  &kp C        &kp V      &kp B          &td_kor_eng_chn  &sk LCTRL  &sk LSHIFT  &sk LALT  &sk LGUI   &none
+                         &lt 6 UNDER  &lt 7 TAB  &lt 4 SPACE    &kp ENTER        &none      &lt 5 DEL
             >;
         };
     };
