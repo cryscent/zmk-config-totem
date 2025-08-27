@@ -57,6 +57,12 @@
             bindings = <&to 4>;
             key-positions = <7 5 6>;
         };
+
+        cb_ert_bt_fn {
+            bindings = <&to 5>;
+            key-positions = <2 3 4>;
+            require-prior-idle-ms = <150>;
+        };
     };
 
     macros {
