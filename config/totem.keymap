@@ -523,7 +523,7 @@
             bindings = <
            &msc MOVE_X(-20)  &mkp LCLK  &mo_to 1 1   &mkp RCLK  &msc MOVE_X(20)     &kp Y      &kp U       &kp I      &kp O    &kp P
            &kp LGUI          &kp LALT   &kp LSHIFT   &kp LCTRL  &msc MOVE_Y(20)     &kp H      &kp J       &kp K      &kp L    &kp SEMI
-&kp GRAVE  &to 0             &to 6      &to 4        &to 5      &msc MOVE_Y(-20)    &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp SINGLE_QUOTE
+&kp GRAVE  &none             &none      &none        &none      &msc MOVE_Y(-20)    &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp SINGLE_QUOTE
                                         &lt 6 UNDER  &none      &lt 4 SPACE         &kp ENTER  &lt 8 BSPC  &lt 5 DEL
             >;
         };
@@ -531,10 +531,10 @@
         r_homerow_l_base {
             label = "l_BASE";
             bindings = <
-           &kp Q  &kp W  &kp E        &kp R      &kp T          &kp PG_UP  &kp HOME   &mkp LCLK   &kp END   &mkp LCLK
-           &kp A  &kp S  &kp D        &kp F      &kp G          &kp PG_DN  &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI
-&kp GRAVE  &kp Z  &kp X  &kp C        &kp V      &kp B          &none      &to 6      &to 4       &to 5     &to 0      &none
-                         &lt 6 UNDER  &lt 7 TAB  &lt 4 SPACE    &kp ENTER  &none      &lt 5 DEL
+           &kp Q  &kp W  &kp E        &kp R      &kp T          &kp PG_UP       &kp HOME        &mkp LCLK   &kp END   &mkp RCLK
+           &kp A  &kp S  &kp D        &kp F      &kp G          &kp PG_DN       &kp LCTRL       &kp LSHIFT  &kp LALT  &kp LGUI
+&kp GRAVE  &kp Z  &kp X  &kp C        &kp V      &kp B          &kp LANGUAGE_1  &kp LANGUAGE_2  &none       &none     &none      &none
+                         &lt 6 UNDER  &lt 7 TAB  &lt 4 SPACE    &kp ENTER       &none           &lt 5 DEL
             >;
         };
     };
