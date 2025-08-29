@@ -628,10 +628,10 @@
 
         r_np {
             bindings = <
-       &none     &kp ESC   &kp CAPSLOCK  &caps_word  &kp LEFT_PARENTHESIS    &kp N6     &kp N7      &kp N8     &kp N9  &kp N0
-       &kp LGUI  &kp LALT  &kp LSHIFT    &kp LCTRL   &kp LEFT_BRACKET        &kp EQUAL  &kp N4      &kp N5     &kp N6  &kp STAR
-&none  &none     &none     &none         &none       &kp LT                  &kp MINUS  &kp N1      &kp N2     &kp N3  &kp SLASH  &kp PLUS
-                           &none         &lt 7 TAB   &lt 4 SPACE             &kp ENTER  &lt 8 BSPC  &lt 5 DEL
+       &none     &none     &none       &none      &kp LEFT_PARENTHESIS    &kp N6     &kp N7      &kp N8     &kp N9  &kp N0
+       &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &kp LEFT_BRACKET        &kp EQUAL  &kp N4      &kp N5     &kp N6  &kp STAR
+&none  &none     &none     &none       &none      &kp LT                  &kp MINUS  &kp N1      &kp N2     &kp N3  &kp SLASH  &kp PLUS
+                           &none       &lt 7 TAB  &lt 4 SPACE             &kp ENTER  &lt 8 BSPC  &lt 5 DEL
             >;
         };
 
@@ -650,7 +650,7 @@
             bindings = <
            &kp Q  &kp W  &kp E        &kp R      &kp T          &kp PG_UP  &kp HOME   &mkp LCLK   &kp END   &mkp RCLK
            &kp A  &kp S  &kp D        &kp F      &kp G          &kp PG_DN  &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI
-&kp GRAVE  &kp Z  &kp X  &kp C        &kp V      &kp B          &none      &none      &none       &none     &sk LGUI   &kp LANGUAGE_2
+&kp GRAVE  &kp Z  &kp X  &kp C        &kp V      &kp B          &none      &none      &none       &none     &none      &kp LANGUAGE_2
                          &lt 6 UNDER  &lt 7 TAB  &lt 4 SPACE    &kp ENTER  &none      &lt 5 DEL
             >;
         };
