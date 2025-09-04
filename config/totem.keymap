@@ -563,7 +563,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BTFN_CAPSLOCK";
             #binding-cells = <0>;
-            bindings = <&tog 5>;
+            bindings = <&tog 5>, <&kp CAPSLOCK>;
+
             tapping-term-ms = <220>;
         };
     };
