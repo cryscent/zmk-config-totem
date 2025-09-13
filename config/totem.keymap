@@ -231,28 +231,28 @@
         mc_mmv_right3x: mc_mmv_right3x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT>;
+            bindings = <&mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT>;
             label = "MC_MMV_RIGHT3X";
         };
 
         mc_mmv_left3x: mc_mmv_left3x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT>;
+            bindings = <&mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT>;
             label = "MC_MMV_LEFT3X";
         };
 
         mc_mmv_up3x: mc_mmv_up3x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP>;
+            bindings = <&mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP>;
             label = "MC_MMV_UP3X";
         };
 
         mc_mmv_down3x: mc_mmv_down3x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN>;
+            bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN>;
             label = "MC_MMV_DOWN3X";
         };
     };
