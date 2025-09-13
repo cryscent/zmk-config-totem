@@ -136,53 +136,6 @@
             key-positions = <29 30 28>;
         };
 
-        cb_tabs_alt {
-            bindings = <&sk LALT>;
-            key-positions = <33 11>;
-            require-prior-idle-ms = <150>;
-        };
-
-        cb_tabd_shift {
-            bindings = <&sk LSHIFT>;
-            key-positions = <12 33>;
-            require-prior-idle-ms = <150>;
-        };
-
-        cb_tabf_ctrl {
-            bindings = <&sk LCTRL>;
-            key-positions = <33 13>;
-            require-prior-idle-ms = <150>;
-        };
-
-        cb_taba_gui {
-            bindings = <&sk LGUI>;
-            key-positions = <33 10>;
-            require-prior-idle-ms = <150>;
-        };
-
-        cb_bspcl_alt {
-            bindings = <&sk LALT>;
-            key-positions = <36 18>;
-            require-prior-idle-ms = <150>;
-        };
-
-        cb_bspck_shift {
-            bindings = <&sk LSHIFT>;
-            key-positions = <36 17>;
-            require-prior-idle-ms = <150>;
-        };
-
-        cb_bspcj_ctrl {
-            bindings = <&sk LCTRL>;
-            key-positions = <36 16>;
-            require-prior-idle-ms = <150>;
-        };
-
-        cb_bspcsemicolon_gui {
-            bindings = <&sk LGUI>;
-            key-positions = <36 19>;
-            require-prior-idle-ms = <150>;
-        };
     };
 
     macros {
