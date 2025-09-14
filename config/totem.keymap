@@ -41,16 +41,19 @@
         cb_qwe_esc {
             bindings = <&kp ESC>;
             key-positions = <0 1 2>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_asd_grave {
             bindings = <&kp GRAVE>;
             key-positions = <10 11 12>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_zxc_skgui {
             bindings = <&sk LGUI>;
             key-positions = <22 21 23>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_wer_momouse_tomouse {
@@ -74,26 +77,31 @@
         cb_ert_skctrl {
             bindings = <&sk LCTRL>;
             key-positions = <2 3 4>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_dfg_lshift {
             bindings = <&sk LSHIFT>;
             key-positions = <14 12 13>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_cvb_lalt {
             bindings = <&sk LALT>;
             key-positions = <23 25 24>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_yui_minus {
             bindings = <&kp MINUS>;
             key-positions = <5 6 7>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_hjk_equal {
             bindings = <&kp EQUAL>;
             key-positions = <15 17 16>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_nmlt_lang1 {
@@ -123,16 +131,19 @@
         td_iop_star {
             bindings = <&kp STAR>;
             key-positions = <7 8 9>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_klsemicolon_quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <17 18 19>;
+            require-prior-idle-ms = <150>;
         };
 
         cb_commaperiodslash_backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <29 30 28>;
+            require-prior-idle-ms = <150>;
         };
     };
 
@@ -584,7 +595,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_TOBASE_LCLICK";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mkp LCLK>;
+            bindings = <&to 0>, <&mkp LCLK>;
 
             tapping-term-ms = <220>;
         };
@@ -593,7 +604,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_TOBASE_RCLICK";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mkp RCLK>;
+            bindings = <&to 0>, <&mkp RCLK>;
 
             tapping-term-ms = <220>;
         };
@@ -634,7 +645,7 @@
             bindings = <
        &msc MOVE_X(-20)  &none     &none        &none      &msc MOVE_X(20)     &msc MOVE_Y(20)   &msc MOVE_X(-20)  &mmv MOVE_UP    &msc MOVE_X(20)  &none
        &kp LGUI          &kp LALT  &kp LSHIFT   &kp LCTRL  &msc MOVE_Y(20)     &msc MOVE_Y(-20)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&none  &none             &none     &none        &none      &msc MOVE_Y(-20)    &mc_mmv_left3x    &mc_mmv_right3x   &mc_mmv_up3x    &mc_mmv_down3x   &mkp RCLK  &none
+&none  &none             &none     &none        &none      &msc MOVE_Y(-20)    &mmv MOVE_LEFT    &mmv MOVE_RIGHT   &mmv MOVE_UP    &mmv MOVE_DOWN   &mkp RCLK  &none
                                    &lt 6 UNDER  &lt 7 TAB  &lt 4 SPACE         &kp RET           &lt 8 BSPC        &lt 5 DEL
             >;
         };
