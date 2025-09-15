@@ -111,7 +111,7 @@
         };
 
         cb_uio_np {
-            bindings = <&to 6>;
+            bindings = <&td_tonp_exclamation>;
             key-positions = <8 7 6>;
             require-prior-idle-ms = <150>;
         };
@@ -143,6 +143,186 @@
         cb_commaperiodslash_backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <29 30 28>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_fg_ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <13 14>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_dg_shift {
+            bindings = <&kp LSHFT>;
+            key-positions = <12 14>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_sg_alt {
+            bindings = <&kp LALT>;
+            key-positions = <14 11>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_ag_gui {
+            bindings = <&kp LGUI>;
+            key-positions = <10 14>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_df_ctrl_shift {
+            bindings = <&kp LC(LSHIFT)>;
+            key-positions = <13 12>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_sf_alt_ctrl {
+            bindings = <&kp LS(LALT)>;
+            key-positions = <11 13>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_af_gui_ctrl {
+            bindings = <&kp LC(LGUI)>;
+            key-positions = <13 10>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_sd_alt_shift {
+            bindings = <&kp LS(LALT)>;
+            key-positions = <12 11>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_ad_gui_shift {
+            bindings = <&kp LS(LGUI)>;
+            key-positions = <12 10>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_as_gui_alt {
+            bindings = <&kp LA(LGUI)>;
+            key-positions = <10 11>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_sdfg_alt_shit_ctrl {
+            bindings = <&kp LA(LS(LCTRL))>;
+            key-positions = <11 13 12 14>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_adf_gui_shift_ctrl {
+            bindings = <&kp LS(LC(LGUI))>;
+            key-positions = <13 12 10>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_asf_gui_alt_ctrl {
+            bindings = <&kp LC(LA(LGUI))>;
+            key-positions = <13 10 11>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_asdg_gui_alt_shift {
+            bindings = <&kp LS(LA(LGUI))>;
+            key-positions = <10 11 12 14>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_asdf_gui_alt_shift_ctrl {
+            bindings = <&kp LS(LA(LC(LGUI)))>;
+            key-positions = <10 11 12 13>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_hj_ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <15 16>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_hk_shift {
+            bindings = <&kp LSHFT>;
+            key-positions = <15 17>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_hl_alt {
+            bindings = <&kp LALT>;
+            key-positions = <15 18>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_hsemic_gui {
+            bindings = <&kp LGUI>;
+            key-positions = <15 19>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_jk_ctrl_shift {
+            bindings = <&kp LC(LSHIFT)>;
+            key-positions = <16 17>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_jl_ctrl_alt {
+            bindings = <&kp LS(LALT)>;
+            key-positions = <16 18>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_jsemic_ctrl_gui {
+            bindings = <&kp LC(LGUI)>;
+            key-positions = <16 19>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_kl_shift_alt {
+            bindings = <&kp LS(LALT)>;
+            key-positions = <17 18>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_ksemic_shift_gui {
+            bindings = <&kp LS(LGUI)>;
+            key-positions = <17 19>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_lsemic_alt_gui {
+            bindings = <&kp LA(LGUI)>;
+            key-positions = <18 19>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_hjkl_ctrl_shift_alt {
+            bindings = <&kp LA(LS(LCTRL))>;
+            key-positions = <15 17 16 18>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_jksemic_ctrl_shift_gui {
+            bindings = <&kp LS(LC(LGUI))>;
+            key-positions = <16 17 19>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_jlsemic_ctrl_alt_gui {
+            bindings = <&kp LC(LA(LGUI))>;
+            key-positions = <16 18 19>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_hklsemic_shift_alt_gui {
+            bindings = <&kp LS(LA(LGUI))>;
+            key-positions = <15 17 18 19>;
+            require-prior-idle-ms = <150>;
+        };
+
+        cb_jklsemic_ctrl_shift_alt_gui {
+            bindings = <&kp LS(LA(LC(LGUI)))>;
+            key-positions = <16 17 19 18>;
             require-prior-idle-ms = <150>;
         };
     };
@@ -618,11 +798,11 @@
             tapping-term-ms = <220>;
         };
 
-        td_tonp_scrllock: td_tonp_scrllock {
+        td_tonp_exclamation: td_tonp_exclamation {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_TONP_SCRLLOCK";
+            label = "TD_TONP_EXCLAMATION";
             #binding-cells = <0>;
-            bindings = <&to 6>, <&kp SCROLLLOCK>;
+            bindings = <&to 6>, <&kp EXCL>;
 
             tapping-term-ms = <220>;
         };
