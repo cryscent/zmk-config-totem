@@ -177,7 +177,7 @@
         };
 
         cb_sf_alt_ctrl {
-            bindings = <&kp LS(LALT)>;
+            bindings = <&kp LC(LALT)>;
             key-positions = <11 13>;
             require-prior-idle-ms = <150>;
         };
