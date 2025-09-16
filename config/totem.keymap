@@ -111,7 +111,7 @@
         };
 
         cb_uio_np {
-            bindings = <&td_tonp_exclamation>;
+            bindings = <&td_tonp_context_menu>;
             key-positions = <8 7 6>;
             require-prior-idle-ms = <150>;
         };
@@ -798,11 +798,11 @@
             tapping-term-ms = <220>;
         };
 
-        td_tonp_exclamation: td_tonp_exclamation {
+        td_tonp_context_menu: td_tonp_context_menu {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_TONP_EXCLAMATION";
+            label = "TD_TONP_CONTEXT_MENU";
             #binding-cells = <0>;
-            bindings = <&to 6>, <&kp EXCL>;
+            bindings = <&to 6>, <&kp LC(K_CONTEXT_MENU)>;
 
             tapping-term-ms = <220>;
         };
