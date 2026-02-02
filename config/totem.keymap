@@ -111,7 +111,7 @@
         };
 
         cb_uio_np {
-            bindings = <&td_tonp_context_menu>;
+            bindings = <&td_tonp>;
             key-positions = <8 7 6>;
             require-prior-idle-ms = <170>;
         };
@@ -689,12 +689,11 @@
             tapping-term-ms = <220>;
         };
 
-        td_tonp_context_menu: td_tonp_context_menu {
+        td_tonp: td_tonp {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_TONP_CONTEXT_MENU";
+            label = "TD_TONP";
             #binding-cells = <0>;
-            bindings = <&to 4>, <&kp LC(K_CONTEXT_MENU)>;
-
+            bindings = <&to 4>;
             tapping-term-ms = <220>;
         };
 
